@@ -29,7 +29,7 @@ source venv\bin\activate
 Python packages can be installed via:
 
 ```shell
-   git clone https://github.com/22842219/SemanticParser4Graph.git
+   git clone git@github.com:nlp-tlp/Rel2Graph.git
 
    pip install torch torchvision
 
@@ -42,8 +42,7 @@ Python packages can be installed via:
 
 #### Text-to-Spider benchmarks, e.g., [Spider](https://yale-lily.github.io/spider), [KaggleDBQA](https://github.com/chiahsuan156/KaggleDBQA#Data-Format), and [BIRD](https://bird-bench.github.io/). We use the Spider and KaggleDBQA benchmarks to illustrate the process.
 
-Download the [pre-processed data release](https://uniwa-my.sharepoint.com/:f:/r/personal/22842219_student_uwa_edu_au/Documents/preprocessed_spider?csf=1&web=1&e=Sh1Ep2), and unzip the folder.
-put the data into `application/data/spider`.
+Take Spider as an example, firstly download the [pre-processed data release](https://uniwa-my.sharepoint.com/:f:/r/personal/22842219_student_uwa_edu_au/Documents/preprocessed_spider?csf=1&web=1&e=Sh1Ep2), and unzip the folder. Then, put the data into `rel_db2kg/data/spider`. 
 
 Note: If you would like to preprocess Spider dataset by yourself, please refer to [salesforce TabularSemanticParsing](https://github.com/salesforce/TabularSemanticParsing)
 
@@ -80,10 +79,10 @@ Note: If you would like to preprocess Spider dataset by yourself, please refer t
    ```
 
    Set `_neo4j_export_path = '<path-to->/neo4j-community-4.4.11/import'` in `Class ConvertDB`.
-2. Configure `application/conf/db.ini` file
+2. Configure `conf/db.ini` file
 
    ```[sqlite3]
-   spider_path = <path-to->/SemanticParser4Graph/application/data/spider/database
+   spider_path = <path-to->/Rel2Graph/data/spider/database
    database = musical
 
    [neo4j]
@@ -110,14 +109,13 @@ Note: If you would like to preprocess Spider dataset by yourself, please refer t
    Translate SQL queries to Cypher queries.
 
    ```shell
-   cd application/rel_db2kg
+   cd rel_db2kg
    python sql2cypher.py 
 
    ```
 5. Running interface
 
    ```shell
-   cd application
    python interface --web_ui
    ```
 
