@@ -6,7 +6,7 @@ This project implements
 
 - A process to convert [relational databases to property graph databases](rel_db2kg).
 - A process to translate [SQL queries to Cypher queries](rel_db2kg) by parsing, tokenizing SQL queries and converting SQL queries to Cypher queries.
-- REL2GRAPH: AUTOMATED MAPPING FROM RELATIONAL DATABASES TO A UNIFIED PROPERTY KNOWLEDGE GRAPH.
+- Rel2Graph: Automated Mapping From Relational Databases to a Unified Property Knowledge Graph.
 
 ## Quick Start
 
