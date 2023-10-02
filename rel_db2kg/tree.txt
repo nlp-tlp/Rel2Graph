@@ -1,0 +1,31 @@
+Root
+├── select
+│   ├── value
+│   │   └── T1.department_id
+│   ├── value
+│   │   └── T1.name
+│   └── value
+│       └── count
+│           └── *
+├── from
+│   ├── value
+│   │   └── management
+│   ├── name
+│   │   └── T2
+│   ├── join
+│   │   ├── name
+│   │   │   └── T1
+│   │   └── value
+│   │       └── department
+│   └── on
+│       └── eq
+│           ├── T1.department_id
+│           └── T2.department_id
+├── groupby
+│   └── value
+│       └── T1.department_id
+└── having
+    └── gt
+        ├── count
+        │   └── *
+        └── 1

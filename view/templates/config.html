@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL TO CYPHER</title>
+    <link rel="stylesheet"  href="{{ url_for('static', filename = 'css/layui.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/graph.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'layer/theme/default/layer.css') }}">
+</head>
+<body class="layui-layout-body">
+  <div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+      <div class="layui-logo">SQL2CYPHER</div>
+  <!--    &lt;!&ndash; 头部区域（可配合layui已有的水平导航） &ndash;&gt;-->
+      <ul class="layui-nav layui-layout-left">
+        <li class="layui-nav-item"><a href="/">Realtion</a></li>
+        <li class="layui-nav-item"><a href="/sql2cypher">QUERY</a></li>
+        <li class="layui-nav-item layui-this"><a href="/config">CONFIG</a></li>
+        <li class="layui-nav-item"><a href="">LOG</a></li>
+      </ul>
+    </div>
+
+      <!--   config page   -->
+      <div class="layui-container" style="font-size: medium; height: 500px; margin-top: 50px; width: 50%; margin-left: 24%; border-width:2px; border-style: dashed; border-color:black;">
+        <form class="layui-form" action="/config" style="margin: 5%; " method="POST">
+          <div class="layui-form-item">
+            <div class="layui-inline">
+              <label class="layui-form-label">Host</label>
+              <div class="layui-input-inline">
+                <label>
+                  <input type="text" name="host" required autocomplete="off" placeholder="Host for database" class="layui-input" value="localhost">
+                </label>
+              </div>
+            </div>
+
+
+            <div class="layui-inline">
+              <label class="layui-form-label">Port</label>
+              <div class="layui-input-inline">
+                <label>
+                  <input type="number" id="port" name="port" required autocomplete="off" value="3306" placeholder="Port for database" class="layui-input">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="layui-form-item">
+            <label class="layui-form-label">Type</label>
+            <div class="layui-input-block">
+              <label for="type"></label><select name="type" id="type" lay-filter="type">
+                <option value="mysql" selected>mysql</option>
+                <option value="sqlite3" selected>sqlite3</option>
+                <option value="psql">psql</option>
+                <option value="neo4j">neo4j</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="layui-form-item">
+            <label class="layui-form-label">Database</label>
+            <div class="layui-input-block">
+              <label>
+                <input type="text" id="database" name="database" required  placeholder="Database" autocomplete="off" class="layui-input">
+              </label>
+            </div>
+          </div>
+
+          <div class="layui-form-item">
+            <div class="layui-inline">
+              <label class="layui-form-label">Username</label>
+              <div class="layui-input-inline">
+                <label>
+                  <input type="text" name="username" required  placeholder="Username for database" class="layui-input" value="">
+                </label>
+              </div>
+            </div>
+
+
+            <div class="layui-inline">
+              <label class="layui-form-label">Password</label>
+              <div class="layui-input-inline">
+                <label>
+                  <input type="password" name="password" required placeholder="password for database" class="layui-input" value="">
+                </label>
+              </div>
+            </div>
+          </div>
+
+           <div class="layui-form-item">
+              <label class="layui-form-label">Method</label>
+              <div class="layui-input-block">
+                <select name="export_method" lay-filter="aihao">
+                  <option value="default">csv & cypher</option>
+                  <option value="csv">csv</option>
+                  <option value="cypher">cypher</option>
+                </select>
+              </div>
+            </div>
+
+          <div class="layui-form-item">
+            <label class="layui-form-label">Output</label>
+            <div class="layui-input-block">
+                <label>
+                    <input type="checkbox" name="output" lay-skin="switch" lay-filter="switchTest" lay-text="ON|OFF">
+                </label>
+            </div>
+          </div>
+
+          <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo"  type="submit">Submit</button>
+            <button type="reset" class="layui-btn layui-btn-primary">Reset</button>
+          </div>
+        </form>
+      </div>
+
+
+  </div>
+
+  <script src="{{ url_for('static', filename = 'js/layui.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/layer.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/d3.v3.min.js') }}"></script>
+<!--  <script src="../static/js/graph.js"></script>-->
+  <script>
+    layui.use(['form', 'element', 'layer', 'jquery'], function(){
+        var form = layui.form
+          ,$ = layui.jquery
+          ,layer = layui.layer
+          ,element = layui.element;
+
+
+          form.on('select(type)', function (data){
+              if (data.value === "mysql") {
+                  $("#port").val(3306);
+                  $("#database").removeAttr('disabled');
+              } else if (data.value === "psql") {
+                  $("#port").val(5432);
+                  $("#database").removeAttr('disabled');
+              } else if (data.value === "sqlite3") {
+                  $("#port").val(null);
+                  $("#database").removeAttr('disabled');
+              } else {
+                  $("#port").val(7687);
+                  $("#database").attr('disabled', 'disabled');
+              }
+          });
+
+
+          form.on('switch(switchTest)', function(data){
+            layer.msg('Output only：'+ (this.checked ? 'true' : 'false'), {
+              offset: '6px'
+            });
+            layer.tips('If switch on then the cypher will be not be executed, which will be stored into /data/ folder. Otherwise cypher will be executed directly.', data.othis)
+            this.checked = !this.checked;
+          });
+
+          // console.log(form);
+
+    });
+
+
+  </script>
+</body>
+</html>

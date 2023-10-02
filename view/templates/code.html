@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL TO CYPHER</title>
+    <link rel="stylesheet"  href="{{ url_for('static', filename = 'css/layui.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/codemirror.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/docs.css') }}">
+    <link rel="stylesheet"  href="{{ url_for('static', filename = 'css/show-hint.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/neo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'layer/theme/default/layer.css') }}">
+
+<!--    <link rel="stylesheet" href="../static/css/layui.css">-->
+<!--    <link rel="stylesheet" href="../static/css/codemirror.css">-->
+<!--    <link rel="stylesheet" href="../static/css/docs.css">-->
+<!--    <link rel="stylesheet" href="../static/css/show-hint.css">-->
+<!--    <link rel="stylesheet" href="../static/css/neo.css">-->
+<!--    <link rel="stylesheet" href="../static/layer/theme/default/layer.css">-->
+    <script src="{{ url_for('static', filename = 'js/codemirror.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/matchbrackets.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/show-hint.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/sql-hint.js') }}"></script>
+
+<!--    <script src="../static/js/codemirror.js"></script>-->
+<!--    <script src="../static/js/matchbrackets.js"></script>-->
+<!--    <script src="../static/js/show-hint.js"></script>-->
+<!--    <script src="../static/js/sql-hint.js"></script>-->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/neo4jd3.min.css?v=0.0.1') }}">
+
+<!--    <link rel="stylesheet" href="../static/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="../static/css/font-awesome.min.css">-->
+<!--    <link rel="stylesheet" href="../static/css/neo4jd3.min.css?v=0.0.1">-->
+    <style>
+      .CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
+    </style>
+<!--    <link rel="stylesheet" href="../static/css/graph.css">-->
+</head>
+<body class="layui-layout-body" style="overflow: auto; font-size: 14px">
+  <div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+      <div class="layui-logo">SQL2CYPHER</div>
+  <!--    &lt;!&ndash; 头部区域（可配合layui已有的水平导航） &ndash;&gt;-->
+      <ul class="layui-nav layui-layout-left">
+        <li class="layui-nav-item"><a href="/">Realtion</a></li>
+        <li class="layui-nav-item layui-this"><a href="/sql2cypher">QUERY</a></li>
+        <li class="layui-nav-item"><a href="/config">CONFIG</a></li>
+        <li class="layui-nav-item"><a href="">LOG</a></li>
+      </ul>
+    </div>
+
+      <div class="layui-container" style="overflow: auto">
+          <!-- 内容主体区域 -->
+          <div class="layui-row">
+              <div class="layui-col-md5">
+                  <div style="padding: 15px;">
+                    <h3>SQL QUERY CODE:</h3>
+                  </div>
+                  <textarea id="code" name="code" style="display: none; border-width:2px; border-style: dashed; border-color:black;">SELECT T1.Name ,  T2.Name FROM actor AS T1 JOIN musical AS T2 ON T1.Musical_ID  =  T2.Musical_ID;</textarea>
+
+                  <!--         tab bar for result         -->
+                  <div class="layui-tab">
+                      <ul class="layui-tab-title">
+                        <li class="layui-this">
+                            <svg class="SVGInline-svg" style="width: 20px;height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.5 17">
+                                <defs>
+                                    <style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style>
+                                </defs>
+                                <title>table</title>
+                                <path d="M2.25.75h18c.83,0,1.5.5,1.5,1.11V15.14c0,.62-.67,1.11-1.5,1.11h-18c-.83,0-1.5-.49-1.5-1.11V1.86C.75,1.25,1.42.75,2.25.75Z" class="a"></path>
+                                <line x1="11.25" y1="0.75" x2="11.25" y2="16.25" class="a"></line>
+                                <line x1="0.75" y1="11.25" x2="21.75" y2="11.25" class="a"></line>
+                                <line x1="1.25" y1="1.63" x2="21.25" y2="1.63" class="a"></line>
+                                <line x1="0.75" y1="6.25" x2="21.75" y2="6.25" class="a"></line>
+                            </svg>
+                        </li>
+                        <li>
+                            <span class="SVGInline"><svg class="SVGInline-svg" style="width: 18px;height: 18px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.5 24">
+                                <defs>
+                                    <style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style>
+                                </defs>
+                                <title>Text2</title>
+                                <path d="M2.85,23.25,10.46,1.1c.17-.47.42-.47.58,0l7.61,22.15" class="a"></path>
+                                <line x1="0.75" y1="23.25" x2="5.75" y2="23.25" class="a"></line>
+                                <line x1="15.75" y1="23.25" x2="20.75" y2="23.25" class="a"></line>
+                                <line x1="6.28" y1="13.25" x2="15.21" y2="13.25" class="a"></line>
+                            </svg></span>
+                        </li>
+                        <li>
+                            <span class="SVGInline"><svg class="SVGInline-svg" style="width: 20px;height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>app-window-code</title><rect class="a" x="1.51" y="2.253" width="21" height="19.5" rx="1.5" ry="1.5"></rect><line class="a" x1="1.51" y1="6.753" x2="22.51" y2="6.753"></line><line class="a" x1="12.01" y1="17.253" x2="16.51" y2="17.253"></line><polyline class="a" points="7.51 11.253 10.51 14.253 7.51 17.253"></polyline></svg></span>
+                        </li>
+                      </ul>
+                      <div class="layui-tab-content">
+                        <div id="sql_table" class="layui-tab-item layui-show" style="overflow: auto">
+                            <table id="sql_table_res" lay-filter="test"></table>
+                        </div>
+                        <div id="sql_text" class="layui-tab-item" style="overflow: scroll">
+
+                        </div>
+                        <div id="sql_code" class="layui-tab-item">
+
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="layui-col-md1">
+                  <div style="padding: 40px;"></div>
+                  <div style="margin-left: 25%">
+                      <button type="button" id="convert" style="width: 50px" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button>
+                  </div>
+                  <div style="margin-left: 25%; margin-top: 10%">
+                      <button type="button" style="width: 50px" id="clear" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"><span title="Clear" class="buttons__BaseButton-sc-3xi0d5-0 coZvtM"><span data-testid="clearEditorContent" disabled="" class="SVGInline"><svg class="SVGInline-svg" style="width: 24px;height: 24px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="SVGInline-33-title"><title id="SVGInline-33-title">Clear</title><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>eraser-2</title><rect class="a" x="5.893" y="4.194" width="12.728" height="10.607" rx="1.5" ry="1.5" transform="translate(-3.126 11.449) rotate(-45)"></rect><path class="a" d="M4.8,10.952,2.379,13.376a3,3,0,0,0,0,4.243l1.189,1.189a1.5,1.5,0,0,0,1.061.44H7.886a1.5,1.5,0,0,0,1.061-.44L10.8,16.951"></path><line class="a" x1="6" y1="22.248" x2="22.5" y2="22.248"></line></svg></span></span></i></button>
+                  </div>
+
+                  <div style="margin-left: 25%; margin-top: 10%">
+                      <button id="run" type="button" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"><span title="Play" class="buttons__BaseButton-sc-3xi0d5-0 coZvtM"><span data-testid="submitQuery" disabled="" class="SVGInline"><svg class="SVGInline-svg" style="width: 24px;height: 24px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="SVGInline-34-title"><title id="SVGInline-34-title">Play</title><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>controls-play</title><path class="a" d="M2.338,3.255v17.49a1.5,1.5,0,0,0,2.209,1.322L20.87,13.322a1.5,1.5,0,0,0,0-2.644L4.547,1.933A1.5,1.5,0,0,0,2.338,3.255Z"></path></svg></span></span></i></button>
+                  </div>
+              </div>
+
+              <div class="layui-col-md5">
+                  <div style="padding: 15px;">
+                    <h3>CYPHER QUERY CODE:</h3>
+                  </div>
+                  <textarea id="cypher" name="code" style="display: none;"></textarea>
+
+                  <div class="layui-tab">
+                      <ul class="layui-tab-title">
+                        <li class="layui-this">
+                              <span class="SVGInline"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+                                <svg class="SVGInline-svg" style="width: 20px;height: 20px;" id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="24" width="24" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 24 24">
+                                 <defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs>
+                                 <path id="path6" d="m14.168 20.262c1.5956-0.43742 3.0565-1.299 4.2481-2.5295 1.5691-1.6212 2.5109-3.7173 2.7171-5.9502l-0.77521-0.0716c-0.19069 2.0587-1.057 3.9889-2.5015 5.4809-1.0943 1.1309-2.433 1.9201-3.8939 2.3202l0.20548 0.7503zm3.679-16.835c-2.453-2.1528-5.785-2.847-8.8343-1.9014l0.2304 0.7433c2.7919-0.8655 5.8409-0.2304 8.0899 1.7434l0.514-0.5853zm-13.648 1.5621c-2.819 3.8496-2.4758 9.2955 0.8601 12.742 0.27163 0.28019 0.55728 0.54249 0.85615 0.78454l0.4904-0.605c-0.2748-0.223-0.5371-0.463-0.7869-0.721-3.0713-3.173-3.388-8.1955-0.7916-11.741l-0.6281-0.4597zm13.051 9.9125c0.29732 0.30666 0.29732 0.80478 0 1.1114-0.29732 0.30666-0.7791 0.30666-1.0764 0-0.29732-0.30666-0.29732-0.80478 0-1.1114 0.29732-0.30666 0.7791-0.30666 1.0764 0zm-1.3045 1.6843c0.29732 0.30666 0.29732 0.80478 0 1.1114-0.29732 0.30666-0.7791 0.30666-1.0764 0-0.29732-0.30666-0.29732-0.80478 0-1.1114 0.29732-0.30666 0.7791-0.30666 1.0764 0zm-8.0377-2.85c0.29732 0.30666 0.29732 0.80478 0 1.1114-0.29732 0.30666-0.7791 0.30666-1.0764 0-0.29732-0.30666-0.29732-0.80478 0-1.1114 0.29732-0.30666 0.7791-0.30666 1.0764 0zm-1.0873-1.969c0.29732 0.30666 0.29732 0.80478 0 1.1114-0.29732 0.30666-0.7791 0.30666-1.0764 0-0.29732-0.30666-0.29732-0.80478 0-1.1114 0.29732-0.30666 0.7791-0.30666 1.0764 0zm4.843-9.3981c0.29732 0.30666 0.29732 0.80478 0 1.1114-0.29732 0.30666-0.7791 0.30666-1.0764 0-0.29732-0.30666-0.29732-0.80478 0-1.1114 0.29732-0.30666 0.7791-0.30666 1.0764 0zm1.7512 0.72695c0.29732 0.30666 0.29732 0.80478 0 1.1114-0.29732 0.30666-0.7791 0.30666-1.0764 0-0.29732-0.30666-0.29732-0.80478 0-1.1114 0.29732-0.30666 0.7791-0.30666 1.0764 0zm-7.131 4.1734c0.29732 0.30666 0.29732 0.80478 0 1.1114-0.29732 0.30666-0.7791 0.30666-1.0764 0-0.29732-0.30666-0.29732-0.80478 0-1.1114 0.29732-0.30666 0.7791-0.30666 1.0764 0zm0.10274 2.1894c0.29732 0.30666 0.29732 0.80478 0 1.1114-0.29732 0.30666-0.7791 0.30666-1.0764 0-0.29732-0.30666-0.29732-0.80478 0-1.1114 0.29732-0.30666 0.7791-0.30666 1.0764 0zm6.253 7.1707c1.4329 1.4796 1.4329 3.8846 0 5.3642-1.4259 1.4726-3.732 1.4726-5.1571 0-1.4329-1.4796-1.4329-3.8846 0-5.3642 1.4259-1.4726 3.732-1.4726 5.1571 0l0.55883-0.54093c-1.7318-1.7886-4.5446-1.7886-6.2756 0-1.7248 1.7816-1.7248 4.6652 0 6.4468 1.7318 1.7886 4.5446 1.7886 6.2756 0 1.7248-1.7816 1.7248-4.6652 0-6.4468l-0.55961 0.54093zm-4.1394-14.897c0.95266 0.9838 0.95266 2.584 0 3.5678-0.94566 0.97679-2.4727 0.97679-3.4184 0-0.95266-0.9838-0.95266-2.584 0-3.5678 0.94566-0.97679 2.4727-0.97679 3.4184 0l0.5596-0.5417c-1.2515-1.2928-3.2853-1.2928-4.5368 0-1.2445 1.2858-1.2445 3.3647 0 4.6505 1.2515 1.2928 3.2853 1.2928 4.5368 0 1.2445-1.2858 1.2445-3.3647 0-4.6505l-0.5596 0.5417zm11.541 3.6767c1.7536 1.8119 1.7536 4.754 0 6.5659-1.7466 1.8041-4.5734 1.8041-6.32 0-1.7536-1.8119-1.7536-4.754 0-6.5651 1.7465-1.8041 4.5734-1.8041 6.32 0l0.55961-0.54171c-2.0524-2.1201-5.386-2.1201-7.4384 0-2.0454 2.1131-2.0454 5.5346 0 7.6478 2.0524 2.1201 5.386 2.1201 7.4384 0 2.0454-2.1131 2.0454-5.5346 0-7.6478l-0.56 0.5417z"></path>
+                                </svg></span>
+                        </li>
+                        <li>
+                            <svg class="SVGInline-svg" style="width: 20px;height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.5 17">
+                                <defs>
+                                    <style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style>
+                                </defs>
+                                <title>table</title>
+                                <path d="M2.25.75h18c.83,0,1.5.5,1.5,1.11V15.14c0,.62-.67,1.11-1.5,1.11h-18c-.83,0-1.5-.49-1.5-1.11V1.86C.75,1.25,1.42.75,2.25.75Z" class="a"></path>
+                                <line x1="11.25" y1="0.75" x2="11.25" y2="16.25" class="a"></line>
+                                <line x1="0.75" y1="11.25" x2="21.75" y2="11.25" class="a"></line>
+                                <line x1="1.25" y1="1.63" x2="21.25" y2="1.63" class="a"></line>
+                                <line x1="0.75" y1="6.25" x2="21.75" y2="6.25" class="a"></line>
+                            </svg>
+                        </li>
+                        <li>
+                            <span class="SVGInline"><svg class="SVGInline-svg" style="width: 18px;height: 18px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.5 24">
+                                <defs>
+                                    <style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style>
+                                </defs>
+                                <title>Text</title>
+                                <path d="M2.85,23.25,10.46,1.1c.17-.47.42-.47.58,0l7.61,22.15" class="a"></path>
+                                <line x1="0.75" y1="23.25" x2="5.75" y2="23.25" class="a"></line>
+                                <line x1="15.75" y1="23.25" x2="20.75" y2="23.25" class="a"></line>
+                                <line x1="6.28" y1="13.25" x2="15.21" y2="13.25" class="a"></line>
+                            </svg></span>
+                        </li>
+                        <li>
+                            <span class="SVGInline"><svg class="SVGInline-svg" style="width: 20px;height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>app-window-code</title><rect class="a" x="1.51" y="2.253" width="21" height="19.5" rx="1.5" ry="1.5"></rect><line class="a" x1="1.51" y1="6.753" x2="22.51" y2="6.753"></line><line class="a" x1="12.01" y1="17.253" x2="16.51" y2="17.253"></line><polyline class="a" points="7.51 11.253 10.51 14.253 7.51 17.253"></polyline></svg></span>
+                        </li>
+                      </ul>
+                      <div class="layui-tab-content">
+<!--                          style="height: 500px; width: 500px"-->
+                          <div id="cypher_view"  class="layui-tab-item layui-show" style="height: 500px; width: 500px;" >
+                                    Graph part
+                                </div>
+                            <div>
+                                <button id="full">Full</button>
+
+                            </div>
+                            <div id="cypher_table" class="layui-tab-item" style="overflow: scroll">
+                                <table id="cypher_table_res" lay-filter="test"></table>
+                            </div>
+                            <div id="cypher_text" class="layui-tab-item" style="overflow: scroll">
+
+                            </div>
+                            <div id="cypher_code" class="layui-tab-item">cypher conclusion</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+<!--    add code mirror    -->
+
+    </div>
+  </div>
+    <script src="{{ url_for('static', filename = 'js/layui.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/layer.js') }}">
+        //ZZY: check its path. The original path was wrong. I put layer.js from "static/js/layer" to "static/js".
+    </script>   
+    <script src="{{ url_for('static', filename = 'js/d3.v3.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/mysql.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/cypher.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/d3.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/neo4jd3.js') }}"></script>
+
+<!--  <script src="../static/js/layui.js"></script>-->
+<!--  <script src="../static/layer/layer.js"></script>-->
+<!--  <script src="../static/js/d3.v3.min.js"></script>-->
+<!--  <script src="../static/js/mysql.js"></script>-->
+<!--  <script src="../static/js/cypher.js"></script>-->
+<!--  <script src="../static/js/d3.min.js"></script>-->
+<!--  <script src="../static/js/neo4jd3.js?v=0.0.1"></script>-->
+<!--  <script src="../static/js/graph.js"></script>-->
+  <script>
+
+      function display_graph(data) {
+          var neo4jd3 = new Neo4jd3('#cypher_view', {
+            //ZZY: onNodeDoubleClick
+
+                minCollision: 60,
+                neo4jData: data,
+                nodeRadius: 25,
+
+                onNodeDoubleClick: function(node) {
+                        switch(node.id) {
+                            case '25':
+                                // Google
+                                window.open(node.properties.url, '_blank');
+                                break;
+                            default:
+                                var maxNodes = 5,
+                                    data = neo4jd3.randomD3Data(node, maxNodes);
+                                neo4jd3.updateWithD3Data(data);
+                                break;
+                        }
+                    },
+                onRelationshipDoubleClick: function(relationship) {
+                    console.log('double click on relationship: ' + JSON.stringify(relationship));
+                },
+                zoomFit: true, //add by ZZY
+            });
+      }
+    //JavaScript代码区域
+    layui.use('element', function(){
+      var element = layui.element;
+
+    });
+
+    var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true,
+        mode: "text/x-mysql",
+        tabMode: "indent",
+        extraKeys: {"Ctrl-Space": "autocomplete"},
+        hintOptions: {tables: {
+          users: ["name", "score", "birthDate"],
+          countries: ["name", "population", "size"]
+        }},
+        autofocus: true,
+        matchBrackets: true,
+    });
+
+    editor.addKeyMap({
+        name: 'autoInsertParentheses',
+        "'('": (cm) => {
+            const cur = cm.getCursor()
+
+            cm.replaceRange('()', cur, cur, '+insert')
+            cm.doc.setCursor({ line: cur.line, ch: cur.ch + 1 })
+        }
+    });
+
+
+    var cypher_editor = CodeMirror.fromTextArea(document.getElementById("cypher"), {
+        lineNumbers: true,
+        mode: "application/x-cypher-query",
+        tabMode: "indent",
+        extraKeys: {"Ctrl-Space": "autocomplete"},
+        hintOptions: {tables: {
+          users: ["name", "score", "birthDate"],
+          countries: ["name", "population", "size"]
+        }},
+        autofocus: true,
+        matchBrackets: true,
+        theme: "neo"
+    });
+
+    cypher_editor.addKeyMap({
+        name: 'autoInsertParentheses',
+        "'('": (cm) => {
+            const cur = cm.getCursor()
+
+            cm.replaceRange('()', cur, cur, '+insert')
+            cm.doc.setCursor({ line: cur.line, ch: cur.ch + 1 })
+        }
+    });
+
+    console.log(editor.getValue())
+
+    layui.use(['jquery', 'table', 'layer'], function (){
+        let $ = layui.$;
+        let table = layui.table;
+        // let layer = layui.layer;
+
+        $("#full").on('click', function (){
+            layer.open({
+                type: 2,
+                content: "/graph-view",
+                area: ['320px', '195px'],
+                maxmin: true
+            });
+        });
+
+        $("#clear").on('click', function (data){
+            editor.setValue("");
+            cypher_editor.setValue("");
+        });
+
+        // set convert onclick
+
+        $("#convert").on('click', function (){
+            $.ajax({
+                url: "/convert",
+                type: "POST",
+                data: {
+                    sql: editor.getValue()
+                },
+                success: function (data) {
+                    cypher_editor.setValue(data.cypher);
+                },
+                catch: function (data) {
+                    console.log(data)
+                }
+            });
+        });
+
+        // to run sql and cypher code
+        $("#run").on('click', function (){
+            $.ajax({
+                url: '/run-code',
+                type: "POST",
+                data: {
+                    type: "sql",
+                    query: editor.getValue()
+                },
+                success: function (data) {
+                    if (data.result === "None") return ;
+                    let cols = []
+                    for (let i = 0; i < data.keys.length; i ++) {
+                        cols.push({
+                            field: data.keys[i],
+                            title: data.keys[i],
+                            sort: true
+                        })
+                    }
+                    table.render({
+                        elem: '#sql_table_res',
+                        data: data.data,
+                        cols: [cols],
+                        limit: 1000000
+                    });
+
+                    let reslut = "[<br>";
+                    data.data.forEach(function (res) {
+                        reslut += "<div>" + JSON.stringify(res) + "</div>";
+                    });
+                    reslut += "]<br>";
+                    // $("#sql_text").clean();
+                    $("#sql_text").html(reslut);
+
+                    // code part
+                    let code = "<div>The time cost is: " + data.cost + "</div>"
+                    code += "<div> The number of result: " + data.data.length + "</div>";
+                    $("#sql_code").html(code);
+                }
+            });
+
+            $.ajax({
+                url: '/run-code',
+                type: "POST",
+                data: {
+                    type: "cypher",
+                    query: cypher_editor.getValue()
+                },
+                success: function (data) {
+                    if (data.result === "None") return ;
+
+                    display_graph(data.data);
+                    localStorage.setItem('data', JSON.stringify(data.data));
+                    let cols = []
+                    for (let i = 0; i < data.keys.length; i ++) {
+                        cols.push({
+                            field: data.keys[i],
+                            title: data.keys[i],
+                            sort: true
+                        })
+                    }
+                    table.render({
+                        elem: '#cypher_table_res',
+                        data: data.table_data,
+                        cols: [cols],
+                        limit: 1000000
+                    });
+
+                    let reslut = "[<br>";
+                    data.original.forEach(function (res) {
+                        reslut += "<div>" + JSON.stringify(res) + "</div>";
+                    });
+                    reslut += "]<br>";
+                    // $("#sql_text").clean();
+                    $("#cypher_text").html(reslut);
+
+                    // code part
+                    let code = "<div>The time cost is: " + data.cost + "</div>"
+                    code += "<div> The number of result: " + data.data.length + "</div>";
+                    $("#cypher_code").html(code);
+                    $("#cypher_view").addClass('layui-tab-item layui-show');
+                }
+            })
+        });
+    });
+
+  </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-430863-29', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>

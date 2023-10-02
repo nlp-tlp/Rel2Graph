@@ -1,0 +1,3699 @@
+{
+  "nodes": {
+    "academic": [
+      {
+        "author": 1
+      },
+      {
+        "conference": 1
+      },
+      {
+        "domain": 1
+      },
+      {
+        "journal": 1
+      },
+      {
+        "keyword": 1
+      },
+      {
+        "organization": 1
+      },
+      {
+        "publication": 1
+      }
+    ],
+    "activity_1": [
+      {
+        "Activity": 16
+      },
+      {
+        "Faculty": 58
+      },
+      {
+        "Student": 34
+      }
+    ],
+    "aircraft": [
+      {
+        "aircraft": 5
+      },
+      {
+        "airport": 10
+      },
+      {
+        "match": 7
+      },
+      {
+        "pilot": 12
+      }
+    ],
+    "allergy_1": [
+      {
+        "Allergy_Type": 14
+      },
+      {
+        "Student": 34
+      }
+    ],
+    "apartment_rentals": [
+      {
+        "Apartment_Bookings": 15
+      },
+      {
+        "Apartment_Buildings": 15
+      },
+      {
+        "Apartment_Facilities": 7
+      },
+      {
+        "Apartments": 15
+      },
+      {
+        "Guests": 15
+      },
+      {
+        "View_Unit_Status": 20
+      }
+    ],
+    "architecture": [
+      {
+        "architect": 5
+      },
+      {
+        "bridge": 15
+      },
+      {
+        "mill": 6
+      }
+    ],
+    "assets_maintenance": [
+      {
+        "Assets": 15
+      },
+      {
+        "Engineer_Visits": 15
+      },
+      {
+        "Fault_Log": 15
+      },
+      {
+        "Maintenance_Contracts": 15
+      },
+      {
+        "Maintenance_Engineers": 15
+      },
+      {
+        "Part_Faults": 15
+      },
+      {
+        "Parts": 3
+      },
+      {
+        "Skills": 3
+      },
+      {
+        "Staff": 15
+      },
+      {
+        "Third_Party_Companies": 15
+      }
+    ],
+    "battle_death": [
+      {
+        "battle": 8
+      },
+      {
+        "death": 13
+      },
+      {
+        "ship": 7
+      }
+    ],
+    "behavior_monitoring": [
+      {
+        "Addresses": 20
+      },
+      {
+        "Behavior_Incident": 15
+      },
+      {
+        "Detention": 15
+      },
+      {
+        "Ref_Address_Types": 2
+      },
+      {
+        "Ref_Detention_Type": 3
+      },
+      {
+        "Ref_Incident_Type": 3
+      },
+      {
+        "Students": 15
+      },
+      {
+        "Teachers": 15
+      }
+    ],
+    "body_builder": [
+      {
+        "body_builder": 5
+      },
+      {
+        "people": 6
+      }
+    ],
+    "book_2": [
+      {
+        "book": 10
+      },
+      {
+        "publication": 7
+      }
+    ],
+    "browser_web": [
+      {
+        "Web_client_accelerator": 19
+      },
+      {
+        "browser": 4
+      }
+    ],
+    "candidate_poll": [
+      {
+        "candidate": 6
+      },
+      {
+        "people": 9
+      }
+    ],
+    "car_1": [
+      {
+        "car_makers": 22
+      },
+      {
+        "car_names": 406
+      },
+      {
+        "cars_data": 406
+      },
+      {
+        "continents": 5
+      },
+      {
+        "countries": 15
+      },
+      {
+        "model_list": 36
+      }
+    ],
+    "cinema": [
+      {
+        "cinema": 10
+      },
+      {
+        "film": 5
+      }
+    ],
+    "city_record": [
+      {
+        "city": 13
+      },
+      {
+        "hosting_city": 6
+      },
+      {
+        "match": 6
+      },
+      {
+        "temperature": 8
+      }
+    ],
+    "climbing": [
+      {
+        "climber": 10
+      },
+      {
+        "mountain": 7
+      }
+    ],
+    "club_1": [
+      {
+        "Club": 4
+      },
+      {
+        "Student": 34
+      }
+    ],
+    "coffee_shop": [
+      {
+        "happy_hour": 10
+      },
+      {
+        "happy_hour_member": 6
+      },
+      {
+        "member": 10
+      },
+      {
+        "shop": 10
+      }
+    ],
+    "college_1": [
+      {
+        "CLASS": 13
+      },
+      {
+        "COURSE": 6
+      },
+      {
+        "DEPARTMENT": 11
+      },
+      {
+        "EMPLOYEE": 37
+      },
+      {
+        "STUDENT": 8
+      }
+    ],
+    "college_3": [
+      {
+        "Course": 76
+      },
+      {
+        "Department": 26
+      },
+      {
+        "Faculty": 58
+      },
+      {
+        "Gradeconversion": 13
+      },
+      {
+        "Student": 34
+      }
+    ],
+    "company_1": [
+      {
+        "department": 3
+      },
+      {
+        "dependent": 7
+      },
+      {
+        "dept_locations": 5
+      },
+      {
+        "employee": 8
+      },
+      {
+        "project": 6
+      },
+      {
+        "works_on": 16
+      }
+    ],
+    "company_employee": [
+      {
+        "company": 19
+      },
+      {
+        "people": 7
+      }
+    ],
+    "company_office": [
+      {
+        "Companies": 19
+      },
+      {
+        "buildings": 12
+      }
+    ],
+    "concert_singer": [
+      {
+        "concert": 6
+      },
+      {
+        "singer": 6
+      },
+      {
+        "stadium": 9
+      }
+    ],
+    "county_public_safety": [
+      {
+        "city": 17
+      },
+      {
+        "county_public_safety": 6
+      }
+    ],
+    "course_teach": [
+      {
+        "course": 10
+      },
+      {
+        "teacher": 7
+      }
+    ],
+    "cre_Doc_Control_Systems": [
+      {
+        "Addresses": 10
+      },
+      {
+        "Document_Drafts": 15
+      },
+      {
+        "Documents": 15
+      },
+      {
+        "Draft_Copies": 8
+      },
+      {
+        "Employees": 6
+      },
+      {
+        "Ref_Document_Status": 3
+      },
+      {
+        "Ref_Document_Types": 3
+      },
+      {
+        "Ref_Shipping_Agents": 5
+      },
+      {
+        "Roles": 4
+      }
+    ],
+    "cre_Doc_Template_Mgt": [
+      {
+        "Documents": 15
+      },
+      {
+        "Paragraphs": 15
+      },
+      {
+        "Ref_Template_Types": 5
+      },
+      {
+        "Templates": 20
+      }
+    ],
+    "cre_Doc_Tracking_DB": [
+      {
+        "All_Documents": 15
+      },
+      {
+        "Document_Locations": 15
+      },
+      {
+        "Documents_to_be_Destroyed": 11
+      },
+      {
+        "Employees": 15
+      },
+      {
+        "Ref_Calendar": 15
+      },
+      {
+        "Ref_Document_Types": 4
+      },
+      {
+        "Ref_Locations": 5
+      },
+      {
+        "Roles": 5
+      }
+    ],
+    "cre_Docs_and_Epenses": [
+      {
+        "Accounts": 15
+      },
+      {
+        "Documents": 15
+      },
+      {
+        "Documents_with_Expenses": 10
+      },
+      {
+        "Projects": 5
+      },
+      {
+        "Ref_Budget_Codes": 3
+      },
+      {
+        "Ref_Document_Types": 5
+      },
+      {
+        "Statements": 2
+      }
+    ],
+    "cre_Drama_Workshop_Groups": [
+      {
+        "Addresses": 20
+      },
+      {
+        "Bookings": 15
+      },
+      {
+        "Clients": 20
+      },
+      {
+        "Customer_Orders": 15
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "Drama_Workshop_Groups": 15
+      },
+      {
+        "Invoice_Items": 2
+      },
+      {
+        "Invoices": 15
+      },
+      {
+        "Marketing_Regions": 8
+      },
+      {
+        "Order_Items": 15
+      },
+      {
+        "Performers": 20
+      },
+      {
+        "Products": 15
+      },
+      {
+        "Ref_Payment_Methods": 3
+      },
+      {
+        "Ref_Service_Types": 4
+      },
+      {
+        "Services": 15
+      },
+      {
+        "Stores": 10
+      }
+    ],
+    "cre_Theme_park": [
+      {
+        "Features": 5
+      },
+      {
+        "Hotels": 20
+      },
+      {
+        "Locations": 15
+      },
+      {
+        "Museums": 3
+      },
+      {
+        "Photos": 15
+      },
+      {
+        "Ref_Attraction_Types": 5
+      },
+      {
+        "Ref_Hotel_Star_Ratings": 5
+      },
+      {
+        "Royal_Family": 2
+      },
+      {
+        "Shops": 4
+      },
+      {
+        "Staff": 20
+      },
+      {
+        "Street_Markets": 2
+      },
+      {
+        "Theme_Parks": 3
+      },
+      {
+        "Tourist_Attractions": 15
+      },
+      {
+        "Visitors": 20
+      },
+      {
+        "Visits": 20
+      }
+    ],
+    "csu_1": [
+      {
+        "Campuses": 23
+      },
+      {
+        "csu_fees": 23
+      },
+      {
+        "degrees": 320
+      },
+      {
+        "discipline_enrollments": 395
+      },
+      {
+        "enrollments": 1113
+      }
+    ],
+    "culture_company": [
+      {
+        "book_club": 12
+      },
+      {
+        "culture_company": 6
+      },
+      {
+        "movie": 10
+      }
+    ],
+    "customer_complaints": [
+      {
+        "Customers": 8
+      },
+      {
+        "Products": 4
+      },
+      {
+        "Staff": 7
+      }
+    ],
+    "customer_deliveries": [
+      {
+        "Actual_Orders": 15
+      },
+      {
+        "Addresses": 15
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "Delivery_Route_Locations": 15
+      },
+      {
+        "Delivery_Routes": 15
+      },
+      {
+        "Employees": 15
+      },
+      {
+        "Products": 6
+      },
+      {
+        "Regular_Orders": 15
+      },
+      {
+        "Trucks": 15
+      }
+    ],
+    "customers_and_addresses": [
+      {
+        "Addresses": 15
+      },
+      {
+        "Customer_Orders": 15
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "Products": 3
+      }
+    ],
+    "customers_and_invoices": [
+      {
+        "Accounts": 15
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "Invoices": 15
+      },
+      {
+        "Order_Items": 15
+      },
+      {
+        "Orders": 15
+      },
+      {
+        "Product_Categories": 4
+      },
+      {
+        "Products": 15
+      }
+    ],
+    "customers_and_products_contacts": [
+      {
+        "Addresses": 15
+      },
+      {
+        "Contacts": 15
+      },
+      {
+        "Customer_Orders": 15
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "Products": 15
+      }
+    ],
+    "customers_campaigns_ecommerce": [
+      {
+        "Customer_Orders": 15
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "Mailshot_Campaigns": 20
+      },
+      {
+        "Premises": 15
+      },
+      {
+        "Products": 15
+      }
+    ],
+    "customers_card_transactions": [
+      {
+        "Accounts": 15
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "Customers_Cards": 15
+      }
+    ],
+    "debate": [
+      {
+        "debate": 6
+      },
+      {
+        "people": 10
+      }
+    ],
+    "decoration_competition": [
+      {
+        "college": 5
+      },
+      {
+        "member": 10
+      },
+      {
+        "round": 6
+      }
+    ],
+    "department_management": [
+      {
+        "department": 15
+      },
+      {
+        "head": 10
+      }
+    ],
+    "department_store": [
+      {
+        "Addresses": 15
+      },
+      {
+        "Customer_Orders": 15
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "Department_Store_Chain": 4
+      },
+      {
+        "Department_Stores": 15
+      },
+      {
+        "Departments": 5
+      },
+      {
+        "Order_Items": 15
+      },
+      {
+        "Products": 15
+      },
+      {
+        "Staff": 15
+      },
+      {
+        "Suppliers": 4
+      }
+    ],
+    "device": [
+      {
+        "device": 6
+      },
+      {
+        "shop": 12
+      }
+    ],
+    "document_management": [
+      {
+        "Document_Sections": 15
+      },
+      {
+        "Document_Structures": 5
+      },
+      {
+        "Documents": 15
+      },
+      {
+        "Functional_Areas": 3
+      },
+      {
+        "Images": 15
+      },
+      {
+        "Roles": 2
+      },
+      {
+        "Users": 15
+      }
+    ],
+    "dog_kennels": [
+      {
+        "Breeds": 3
+      },
+      {
+        "Charges": 3
+      },
+      {
+        "Dogs": 15
+      },
+      {
+        "Owners": 15
+      },
+      {
+        "Professionals": 15
+      },
+      {
+        "Sizes": 3
+      },
+      {
+        "Treatment_Types": 3
+      },
+      {
+        "Treatments": 15
+      }
+    ],
+    "dorm_1": [
+      {
+        "Dorm": 7
+      },
+      {
+        "Dorm_amenity": 12
+      },
+      {
+        "Student": 34
+      }
+    ],
+    "driving_school": [
+      {
+        "Addresses": 15
+      },
+      {
+        "Customer_Payments": 15
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "Lessons": 15
+      },
+      {
+        "Staff": 15
+      },
+      {
+        "Vehicles": 3
+      }
+    ],
+    "e_government": [
+      {
+        "Addresses": 15
+      },
+      {
+        "Forms": 6
+      },
+      {
+        "Individuals": 15
+      },
+      {
+        "Organizations": 5
+      },
+      {
+        "Parties": 15
+      },
+      {
+        "Services": 15
+      }
+    ],
+    "e_learning": [
+      {
+        "Course_Authors_and_Tutors": 15
+      },
+      {
+        "Courses": 15
+      },
+      {
+        "Student_Course_Enrolment": 20
+      },
+      {
+        "Students": 15
+      },
+      {
+        "Subjects": 3
+      }
+    ],
+    "election": [
+      {
+        "county": 5
+      },
+      {
+        "election": 8
+      },
+      {
+        "party": 7
+      }
+    ],
+    "election_representative": [
+      {
+        "election": 5
+      },
+      {
+        "representative": 7
+      }
+    ],
+    "employee_hire_evaluation": [
+      {
+        "employee": 10
+      },
+      {
+        "evaluation": 6
+      },
+      {
+        "hiring": 7
+      },
+      {
+        "shop": 9
+      }
+    ],
+    "entertainment_awards": [
+      {
+        "artwork": 9
+      },
+      {
+        "festival_detail": 5
+      }
+    ],
+    "entrepreneur": [
+      {
+        "entrepreneur": 6
+      },
+      {
+        "people": 8
+      }
+    ],
+    "epinions_1": [
+      {
+        "item": 8
+      },
+      {
+        "review": 7
+      },
+      {
+        "useracct": 7
+      }
+    ],
+    "farm": [
+      {
+        "city": 5
+      },
+      {
+        "farm": 8
+      },
+      {
+        "farm_competition": 6
+      }
+    ],
+    "film_rank": [
+      {
+        "film": 13
+      },
+      {
+        "film_market_estimation": 9
+      },
+      {
+        "market": 6
+      }
+    ],
+    "flight_1": [
+      {
+        "aircraft": 16
+      },
+      {
+        "employee": 31
+      },
+      {
+        "flight": 10
+      }
+    ],
+    "flight_2": [
+      {
+        "airlines": 12
+      },
+      {
+        "airports": 100
+      },
+      {
+        "flights": 1200
+      }
+    ],
+    "flight_company": [
+      {
+        "airport": 9
+      },
+      {
+        "flight": 13
+      },
+      {
+        "operate_company": 14
+      }
+    ],
+    "game_1": [
+      {
+        "Student": 34
+      },
+      {
+        "Video_Games": 6
+      }
+    ],
+    "game_injury": [
+      {
+        "game": 20
+      },
+      {
+        "injury_accident": 15
+      },
+      {
+        "stadium": 13
+      }
+    ],
+    "gas_company": [
+      {
+        "company": 10
+      },
+      {
+        "gas_station": 11
+      }
+    ],
+    "geo": [
+      {
+        "border_info": 1
+      },
+      {
+        "city": 1
+      },
+      {
+        "highlow": 1
+      },
+      {
+        "lake": 1
+      },
+      {
+        "mountain": 1
+      },
+      {
+        "river": 1
+      },
+      {
+        "state": 1
+      }
+    ],
+    "gymnast": [
+      {
+        "gymnast": 7
+      },
+      {
+        "people": 10
+      }
+    ],
+    "hospital_1": [
+      {
+        "Appointment": 9
+      },
+      {
+        "Block": 12
+      },
+      {
+        "Department": 3
+      },
+      {
+        "Medication": 5
+      },
+      {
+        "Nurse": 3
+      },
+      {
+        "Patient": 4
+      },
+      {
+        "Physician": 9
+      },
+      {
+        "Prescribes": 3
+      },
+      {
+        "Procedures": 7
+      },
+      {
+        "Room": 36
+      },
+      {
+        "Stay": 3
+      },
+      {
+        "Undergoes": 6
+      }
+    ],
+    "hr_1": [
+      {
+        "countries": 25
+      },
+      {
+        "departments": 27
+      },
+      {
+        "employees": 107
+      },
+      {
+        "job_history": 11
+      },
+      {
+        "jobs": 19
+      },
+      {
+        "locations": 23
+      },
+      {
+        "regions": 4
+      }
+    ],
+    "icfp_1": [
+      {
+        "Authors": 13
+      },
+      {
+        "Authorship": 14
+      },
+      {
+        "Inst": 8
+      },
+      {
+        "Papers": 7
+      }
+    ],
+    "imdb": [
+      {
+        "actor": 1
+      },
+      {
+        "cast": 1
+      },
+      {
+        "classification": 1
+      },
+      {
+        "company": 1
+      },
+      {
+        "copyright": 1
+      },
+      {
+        "directed_by": 1
+      },
+      {
+        "director": 1
+      },
+      {
+        "genre": 1
+      },
+      {
+        "keyword": 1
+      },
+      {
+        "made_by": 1
+      },
+      {
+        "movie": 1
+      },
+      {
+        "producer": 1
+      },
+      {
+        "tags": 1
+      },
+      {
+        "tv_series": 1
+      },
+      {
+        "writer": 1
+      }
+    ],
+    "inn_1": [
+      {
+        "Reservations": 600
+      },
+      {
+        "Rooms": 10
+      }
+    ],
+    "insurance_and_eClaims": [
+      {
+        "Claim_Headers": 15
+      },
+      {
+        "Claims_Processing": 15
+      },
+      {
+        "Claims_Processing_Stages": 2
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "Policies": 15
+      },
+      {
+        "Staff": 15
+      }
+    ],
+    "insurance_fnol": [
+      {
+        "Available_Policies": 15
+      },
+      {
+        "Claims": 10
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "First_Notification_of_Loss": 7
+      },
+      {
+        "Services": 4
+      },
+      {
+        "Settlements": 10
+      }
+    ],
+    "insurance_policies": [
+      {
+        "Claims": 15
+      },
+      {
+        "Customer_Policies": 15
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "Payments": 15
+      },
+      {
+        "Settlements": 15
+      }
+    ],
+    "journal_committee": [
+      {
+        "editor": 9
+      },
+      {
+        "journal": 16
+      }
+    ],
+    "loan_1": [
+      {
+        "bank": 4
+      },
+      {
+        "customer": 3
+      },
+      {
+        "loan": 3
+      }
+    ],
+    "local_govt_and_lot": [
+      {
+        "Customer_Event_Notes": 13
+      },
+      {
+        "Customer_Events": 13
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "Organizations": 3
+      },
+      {
+        "Properties": 15
+      },
+      {
+        "Residents": 15
+      },
+      {
+        "Services": 15
+      },
+      {
+        "Things": 15
+      },
+      {
+        "Timed_Locations_of_Things": 15
+      },
+      {
+        "Timed_Status_of_Things": 18
+      }
+    ],
+    "local_govt_in_alabama": [
+      {
+        "Events": 15
+      },
+      {
+        "Participants": 15
+      },
+      {
+        "Services": 4
+      }
+    ],
+    "local_govt_mdm": [
+      {
+        "Benefits_Overpayments": 4
+      },
+      {
+        "Business_Rates": 3
+      },
+      {
+        "CMI_Cross_References": 21
+      },
+      {
+        "Council_Tax": 6
+      },
+      {
+        "Customer_Master_Index": 9
+      },
+      {
+        "Electoral_Register": 6
+      },
+      {
+        "Parking_Fines": 2
+      },
+      {
+        "Rent_Arrears": 4
+      }
+    ],
+    "machine_repair": [
+      {
+        "machine": 9
+      },
+      {
+        "repair": 9
+      },
+      {
+        "repair_assignment": 9
+      },
+      {
+        "technician": 10
+      }
+    ],
+    "manufactory_1": [
+      {
+        "Manufacturers": 6
+      },
+      {
+        "Products": 11
+      }
+    ],
+    "manufacturer": [
+      {
+        "furniture": 7
+      },
+      {
+        "manufacturer": 7
+      }
+    ],
+    "match_season": [
+      {
+        "country": 6
+      },
+      {
+        "match_season": 16
+      },
+      {
+        "player": 10
+      },
+      {
+        "team": 10
+      }
+    ],
+    "medicine_enzyme_interaction": [
+      {
+        "enzyme": 8
+      },
+      {
+        "medicine": 21
+      }
+    ],
+    "mountain_photos": [
+      {
+        "camera_lens": 11
+      },
+      {
+        "mountain": 23
+      },
+      {
+        "photos": 10
+      }
+    ],
+    "movie_1": [
+      {
+        "Movie": 8
+      },
+      {
+        "Reviewer": 8
+      }
+    ],
+    "museum_visit": [
+      {
+        "museum": 8
+      },
+      {
+        "visitor": 6
+      }
+    ],
+    "music_1": [
+      {
+        "artist": 6
+      },
+      {
+        "files": 6
+      },
+      {
+        "genre": 6
+      },
+      {
+        "song": 6
+      }
+    ],
+    "music_2": [
+      {
+        "Albums": 1
+      },
+      {
+        "Band": 1
+      },
+      {
+        "Songs": 1
+      }
+    ],
+    "music_4": [
+      {
+        "artist": 7
+      },
+      {
+        "music_festival": 9
+      },
+      {
+        "volume": 10
+      }
+    ],
+    "musical": [
+      {
+        "actor": 9
+      },
+      {
+        "musical": 7
+      }
+    ],
+    "network_1": [
+      {
+        "Friend": 20
+      },
+      {
+        "Highschooler": 16
+      },
+      {
+        "Likes": 10
+      }
+    ],
+    "network_2": [
+      {
+        "Person": 4
+      }
+    ],
+    "news_report": [
+      {
+        "event": 5
+      },
+      {
+        "journalist": 11
+      }
+    ],
+    "orchestra": [
+      {
+        "conductor": 12
+      },
+      {
+        "orchestra": 12
+      },
+      {
+        "performance": 11
+      }
+    ],
+    "party_host": [
+      {
+        "host": 10
+      },
+      {
+        "party": 8
+      }
+    ],
+    "party_people": [
+      {
+        "member": 15
+      },
+      {
+        "party": 5
+      },
+      {
+        "party_events": 8
+      },
+      {
+        "region": 5
+      }
+    ],
+    "performance_attendance": [
+      {
+        "member": 11
+      },
+      {
+        "performance": 6
+      }
+    ],
+    "perpetrator": [
+      {
+        "people": 11
+      },
+      {
+        "perpetrator": 5
+      }
+    ],
+    "pets_1": [
+      {
+        "Pets": 3
+      },
+      {
+        "Student": 34
+      }
+    ],
+    "phone_1": [
+      {
+        "chip_model": 14
+      },
+      {
+        "phone": 8
+      },
+      {
+        "screen_mode": 7
+      }
+    ],
+    "phone_market": [
+      {
+        "market": 6
+      },
+      {
+        "phone": 5
+      }
+    ],
+    "pilot_record": [
+      {
+        "aircraft": 7
+      },
+      {
+        "pilot": 5
+      }
+    ],
+    "poker_player": [
+      {
+        "people": 7
+      },
+      {
+        "poker_player": 5
+      }
+    ],
+    "product_catalog": [
+      {
+        "Attribute_Definitions": 4
+      },
+      {
+        "Catalog_Contents": 15
+      },
+      {
+        "Catalog_Structure": 3
+      },
+      {
+        "Catalogs": 8
+      }
+    ],
+    "products_for_hire": [
+      {
+        "Bookings": 15
+      },
+      {
+        "Customers": 15
+      },
+      {
+        "Discount_Coupons": 15
+      },
+      {
+        "Payments": 15
+      },
+      {
+        "Products_for_Hire": 5
+      },
+      {
+        "View_Product_Availability": 4
+      }
+    ],
+    "products_gen_characteristics": [
+      {
+        "Characteristics": 15
+      },
+      {
+        "Products": 15
+      },
+      {
+        "Ref_Characteristic_Types": 2
+      },
+      {
+        "Ref_Colors": 8
+      },
+      {
+        "Ref_Product_Categories": 3
+      }
+    ],
+    "program_share": [
+      {
+        "channel": 10
+      },
+      {
+        "program": 5
+      }
+    ],
+    "protein_institute": [
+      {
+        "Institution": 11
+      },
+      {
+        "building": 8
+      },
+      {
+        "protein": 5
+      }
+    ],
+    "race_track": [
+      {
+        "race": 7
+      },
+      {
+        "track": 9
+      }
+    ],
+    "railway": [
+      {
+        "manager": 7
+      },
+      {
+        "railway": 10
+      },
+      {
+        "train": 9
+      }
+    ],
+    "real_estate_properties": [
+      {
+        "Other_Available_Features": 3
+      },
+      {
+        "Properties": 15
+      },
+      {
+        "Ref_Feature_Types": 2
+      },
+      {
+        "Ref_Property_Types": 5
+      }
+    ],
+    "restaurant_1": [
+      {
+        "Restaurant": 2
+      },
+      {
+        "Restaurant_Type": 2
+      },
+      {
+        "Student": 34
+      }
+    ],
+    "restaurants": [
+      {
+        "GEOGRAPHIC": 1
+      },
+      {
+        "LOCATION": 1
+      },
+      {
+        "RESTAURANT": 1
+      }
+    ],
+    "riding_club": [
+      {
+        "club": 6
+      },
+      {
+        "coach": 5
+      },
+      {
+        "match_result": 6
+      },
+      {
+        "player": 14
+      }
+    ],
+    "roller_coaster": [
+      {
+        "country": 3
+      },
+      {
+        "roller_coaster": 6
+      }
+    ],
+    "scholar": [
+      {
+        "author": 1
+      },
+      {
+        "cite": 1
+      },
+      {
+        "dataset": 1
+      },
+      {
+        "journal": 1
+      },
+      {
+        "keyphrase": 1
+      },
+      {
+        "paper": 1
+      },
+      {
+        "paperDataset": 1
+      },
+      {
+        "venue": 1
+      }
+    ],
+    "school_bus": [
+      {
+        "driver": 12
+      },
+      {
+        "school": 7
+      }
+    ],
+    "school_finance": [
+      {
+        "School": 8
+      },
+      {
+        "budget": 8
+      },
+      {
+        "endowment": 11
+      }
+    ],
+    "school_player": [
+      {
+        "player": 23
+      },
+      {
+        "school": 6
+      },
+      {
+        "school_details": 6
+      },
+      {
+        "school_performance": 22
+      }
+    ],
+    "scientist_1": [
+      {
+        "Projects": 14
+      },
+      {
+        "Scientists": 12
+      }
+    ],
+    "ship_1": [
+      {
+        "Ship": 9
+      },
+      {
+        "captain": 7
+      }
+    ],
+    "ship_mission": [
+      {
+        "mission": 7
+      },
+      {
+        "ship": 8
+      }
+    ],
+    "shop_membership": [
+      {
+        "branch": 8
+      },
+      {
+        "member": 10
+      },
+      {
+        "membership_register_branch": 8
+      }
+    ],
+    "singer": [
+      {
+        "singer": 8
+      },
+      {
+        "song": 8
+      }
+    ],
+    "small_bank_1": [
+      {
+        "ACCOUNTS": 7
+      },
+      {
+        "CHECKING": 7
+      },
+      {
+        "SAVINGS": 6
+      }
+    ],
+    "soccer_2": [
+      {
+        "College": 4
+      },
+      {
+        "Player": 6
+      }
+    ],
+    "solvency_ii": [
+      {
+        "Addresses": 15
+      },
+      {
+        "Agreements": 15
+      },
+      {
+        "Assets": 3
+      },
+      {
+        "Assets_in_Events": 12
+      },
+      {
+        "Channels": 15
+      },
+      {
+        "Events": 15
+      },
+      {
+        "Finances": 15
+      },
+      {
+        "Locations": 15
+      },
+      {
+        "Parties": 7
+      },
+      {
+        "Products": 15
+      },
+      {
+        "Products_in_Events": 15
+      }
+    ],
+    "sports_competition": [
+      {
+        "club": 6
+      },
+      {
+        "club_rank": 6
+      },
+      {
+        "competition": 11
+      },
+      {
+        "player": 15
+      }
+    ],
+    "station_weather": [
+      {
+        "station": 11
+      },
+      {
+        "train": 11
+      },
+      {
+        "weekly_weather": 16
+      }
+    ],
+    "store_product": [
+      {
+        "district": 15
+      },
+      {
+        "product": 6
+      },
+      {
+        "store": 5
+      },
+      {
+        "store_district": 5
+      }
+    ],
+    "storm_record": [
+      {
+        "region": 13
+      },
+      {
+        "storm": 10
+      }
+    ],
+    "student_1": [
+      {
+        "list": 60
+      },
+      {
+        "teachers": 12
+      }
+    ],
+    "student_assessment": [
+      {
+        "Addresses": 15
+      },
+      {
+        "Candidate_Assessments": 5
+      },
+      {
+        "Candidates": 8
+      },
+      {
+        "Courses": 6
+      },
+      {
+        "People": 8
+      },
+      {
+        "People_Addresses": 8
+      },
+      {
+        "Student_Course_Attendance": 8
+      },
+      {
+        "Students": 8
+      }
+    ],
+    "student_transcripts_tracking": [
+      {
+        "Addresses": 15
+      },
+      {
+        "Courses": 15
+      },
+      {
+        "Degree_Programs": 15
+      },
+      {
+        "Departments": 15
+      },
+      {
+        "Sections": 15
+      },
+      {
+        "Semesters": 15
+      },
+      {
+        "Student_Enrolment": 15
+      },
+      {
+        "Student_Enrolment_Courses": 15
+      },
+      {
+        "Students": 15
+      },
+      {
+        "Transcripts": 15
+      }
+    ],
+    "swimming": [
+      {
+        "event": 6
+      },
+      {
+        "stadium": 10
+      },
+      {
+        "swimmer": 8
+      }
+    ],
+    "theme_gallery": [
+      {
+        "artist": 7
+      },
+      {
+        "exhibition": 6
+      },
+      {
+        "exhibition_record": 13
+      }
+    ],
+    "tracking_grants_for_research": [
+      {
+        "Document_Types": 2
+      },
+      {
+        "Documents": 15
+      },
+      {
+        "Grants": 15
+      },
+      {
+        "Organisation_Types": 2
+      },
+      {
+        "Organisations": 15
+      },
+      {
+        "Project_Staff": 15
+      },
+      {
+        "Projects": 15
+      },
+      {
+        "Research_Outcomes": 2
+      },
+      {
+        "Research_Staff": 15
+      },
+      {
+        "Staff_Roles": 2
+      },
+      {
+        "Tasks": 15
+      }
+    ],
+    "tracking_orders": [
+      {
+        "Customers": 15
+      },
+      {
+        "Invoices": 15
+      },
+      {
+        "Order_Items": 15
+      },
+      {
+        "Orders": 15
+      },
+      {
+        "Products": 15
+      },
+      {
+        "Shipments": 15
+      }
+    ],
+    "tracking_share_transactions": [
+      {
+        "Investors": 20
+      },
+      {
+        "Lots": 15
+      },
+      {
+        "Ref_Transaction_Types": 2
+      },
+      {
+        "Sales": 15
+      },
+      {
+        "Transactions": 15
+      }
+    ],
+    "tracking_software_problems": [
+      {
+        "Problem_Category_Codes": 3
+      },
+      {
+        "Problem_Log": 15
+      },
+      {
+        "Problem_Status_Codes": 2
+      },
+      {
+        "Problems": 15
+      },
+      {
+        "Product": 15
+      },
+      {
+        "Staff": 15
+      }
+    ],
+    "train_station": [
+      {
+        "station": 12
+      },
+      {
+        "train": 11
+      }
+    ],
+    "tvshow": [
+      {
+        "Cartoon": 12
+      },
+      {
+        "TV_Channel": 15
+      },
+      {
+        "TV_series": 12
+      }
+    ],
+    "twitter_1": [
+      {
+        "follows": 9
+      },
+      {
+        "tweets": 8
+      },
+      {
+        "user_profiles": 7
+      }
+    ],
+    "university_basketball": [
+      {
+        "basketball_match": 4
+      },
+      {
+        "university": 5
+      }
+    ],
+    "voter_1": [
+      {
+        "AREA_CODE_STATE": 305
+      },
+      {
+        "CONTESTANTS": 11
+      },
+      {
+        "VOTES": 4
+      }
+    ],
+    "voter_2": [
+      {
+        "Student": 34
+      }
+    ],
+    "wedding": [
+      {
+        "church": 9
+      },
+      {
+        "people": 12
+      }
+    ],
+    "wine_1": [
+      {
+        "appellations": 57
+      },
+      {
+        "grapes": 20
+      }
+    ],
+    "workshop_paper": [
+      {
+        "submission": 10
+      },
+      {
+        "workshop": 6
+      }
+    ],
+    "wrestler": [
+      {
+        "Elimination": 6
+      },
+      {
+        "wrestler": 10
+      }
+    ],
+    "yelp": [
+      {
+        "business": 1
+      },
+      {
+        "category": 1
+      },
+      {
+        "checkin": 1
+      },
+      {
+        "neighbourhood": 1
+      },
+      {
+        "review": 1
+      },
+      {
+        "tip": 1
+      },
+      {
+        "user": 1
+      }
+    ]
+  },
+  "relationships": {
+    "election_representative": [
+      {
+        "representative_AppearsIn_election_representative": 5
+      }
+    ],
+    "csu_1": [
+      {
+        "Campuses_AppearsIn_csu_1": 23
+      },
+      {
+        "Campuses_AppearsIn_csu_1": 320
+      },
+      {
+        "Campuses_AppearsIn_csu_1": 395
+      },
+      {
+        "Campuses_AppearsIn_csu_1": 1113
+      }
+    ],
+    "cre_Theme_park": [
+      {
+        "Tourist_Attractions_AppearsIn_cre_Theme_park": 2
+      },
+      {
+        "Tourist_Attractions_AppearsIn_cre_Theme_park": 15
+      },
+      {
+        "Ref_Hotel_Star_Ratings_AppearsIn_cre_Theme_park": 20
+      },
+      {
+        "Tourist_Attractions_AppearsIn_cre_Theme_park": 20
+      },
+      {
+        "Tourist_Attractions": 14
+      },
+      {
+        "Visits": 20
+      },
+      {
+        "Tourist_Attractions_AppearsIn_cre_Theme_park": 3
+      },
+      {
+        "Tourist_Attractions_AppearsIn_cre_Theme_park": 4
+      },
+      {
+        "Tourist_Attractions_AppearsIn_cre_Theme_park": 3
+      },
+      {
+        "Tourist_Attractions_AppearsIn_cre_Theme_park": 2
+      },
+      {
+        "Tourist_Attraction_Features": 18
+      }
+    ],
+    "products_gen_characteristics": [
+      {
+        "Product_Characteristics": 14
+      },
+      {
+        "Ref_Characteristic_Types_AppearsIn_products_gen_characteristics": 15
+      },
+      {
+        "Products": 10
+      }
+    ],
+    "driving_school": [
+      {
+        "Addresses_AppearsIn_driving_school": 15
+      },
+      {
+        "Staff_AppearsIn_driving_school": 15
+      },
+      {
+        "Vehicles_AppearsIn_driving_school": 15
+      },
+      {
+        "Customers_AppearsIn_driving_school": 15
+      },
+      {
+        "Customers_AppearsIn_driving_school": 15
+      },
+      {
+        "Addresses_AppearsIn_driving_school": 15
+      }
+    ],
+    "station_weather": [
+      {
+        "route": 18
+      },
+      {
+        "station_AppearsIn_station_weather": 16
+      }
+    ],
+    "hospital_1": [
+      {
+        "Nurse_AppearsIn_hospital_1": 7
+      },
+      {
+        "Physician_AppearsIn_hospital_1": 4
+      },
+      {
+        "Appointment_AppearsIn_hospital_1": 2
+      },
+      {
+        "Stay_AppearsIn_hospital_1": 6
+      },
+      {
+        "Nurse_AppearsIn_hospital_1": 5
+      },
+      {
+        "Patient_AppearsIn_hospital_1": 3
+      },
+      {
+        "Patient_AppearsIn_hospital_1": 6
+      },
+      {
+        "Physician_AppearsIn_hospital_1": 3
+      },
+      {
+        "Physician_AppearsIn_hospital_1": 9
+      },
+      {
+        "On_Call": 6
+      },
+      {
+        "Affiliated_With": 11
+      },
+      {
+        "Stay": 3
+      },
+      {
+        "Medication_AppearsIn_hospital_1": 3
+      },
+      {
+        "Procedures_AppearsIn_hospital_1": 6
+      },
+      {
+        "Patient_AppearsIn_hospital_1": 9
+      },
+      {
+        "Block_AppearsIn_hospital_1": 36
+      },
+      {
+        "Physician_AppearsIn_hospital_1": 6
+      },
+      {
+        "Trained_In": 15
+      }
+    ],
+    "real_estate_properties": [
+      {
+        "Ref_Property_Types_AppearsIn_real_estate_properties": 15
+      },
+      {
+        "Ref_Feature_Types_AppearsIn_real_estate_properties": 3
+      },
+      {
+        "Other_Property_Features": 12
+      }
+    ],
+    "tracking_grants_for_research": [
+      {
+        "Documents": 11
+      },
+      {
+        "Organisations_AppearsIn_tracking_grants_for_research": 15
+      },
+      {
+        "Project_Outcomes": 12
+      },
+      {
+        "Organisations_AppearsIn_tracking_grants_for_research": 15
+      },
+      {
+        "Organisation_Types_AppearsIn_tracking_grants_for_research": 15
+      },
+      {
+        "Organisations_AppearsIn_tracking_grants_for_research": 15
+      },
+      {
+        "Projects_AppearsIn_tracking_grants_for_research": 15
+      },
+      {
+        "Project_Staff": 12
+      }
+    ],
+    "student_transcripts_tracking": [
+      {
+        "Student_Enrolment_Courses": 15
+      },
+      {
+        "Degree_Programs_AppearsIn_student_transcripts_tracking": 15
+      },
+      {
+        "Courses_AppearsIn_student_transcripts_tracking": 15
+      },
+      {
+        "Transcript_Contents": 15
+      },
+      {
+        "Departments_AppearsIn_student_transcripts_tracking": 15
+      },
+      {
+        "Semesters_AppearsIn_student_transcripts_tracking": 15
+      },
+      {
+        "Students_AppearsIn_student_transcripts_tracking": 15
+      },
+      {
+        "Addresses_AppearsIn_student_transcripts_tracking": 1
+      }
+    ],
+    "browser_web": [
+      {
+        "accelerator_compatible_browser": 9
+      }
+    ],
+    "customers_and_invoices": [
+      {
+        "Customers_AppearsIn_customers_and_invoices": 15
+      },
+      {
+        "Customers_AppearsIn_customers_and_invoices": 15
+      },
+      {
+        "Orders_AppearsIn_customers_and_invoices": 15
+      },
+      {
+        "Financial_Transactions": 14
+      },
+      {
+        "Product_Categories_AppearsIn_customers_and_invoices": 15
+      },
+      {
+        "Order_Items": 14
+      }
+    ],
+    "restaurant_1": [
+      {
+        "Visits_Restaurant": 2
+      },
+      {
+        "Type_Of_Restaurant": 2
+      }
+    ],
+    "entrepreneur": [
+      {
+        "people_AppearsIn_entrepreneur": 6
+      }
+    ],
+    "cre_Drama_Workshop_Groups": [
+      {
+        "Customer_Orders_AppearsIn_cre_Drama_Workshop_Groups": 15
+      },
+      {
+        "Performers_in_Bookings": 18
+      },
+      {
+        "Bookings_Services": 12
+      },
+      {
+        "Bookings_AppearsIn_cre_Drama_Workshop_Groups": 15
+      },
+      {
+        "Services": 14
+      },
+      {
+        "Invoices_AppearsIn_cre_Drama_Workshop_Groups": 2
+      },
+      {
+        "Ref_Payment_Methods_AppearsIn_cre_Drama_Workshop_Groups": 15
+      },
+      {
+        "Order_Items_AppearsIn_cre_Drama_Workshop_Groups": 2
+      }
+    ],
+    "loan_1": [
+      {
+        "bank_AppearsIn_loan_1": 3
+      }
+    ],
+    "e_government": [
+      {
+        "Services_AppearsIn_e_government": 6
+      },
+      {
+        "Party_Services": 15
+      },
+      {
+        "Party_Forms": 13
+      },
+      {
+        "Party_Addresses": 15
+      },
+      {
+        "Organization_Contact_Individuals": 15
+      }
+    ],
+    "cre_Doc_Control_Systems": [
+      {
+        "Documents_Mailed": 14
+      },
+      {
+        "Ref_Document_Status_AppearsIn_cre_Doc_Control_Systems": 15
+      },
+      {
+        "Documents_AppearsIn_cre_Doc_Control_Systems": 15
+      },
+      {
+        "Ref_Document_Types_AppearsIn_cre_Doc_Control_Systems": 15
+      },
+      {
+        "Roles_AppearsIn_cre_Doc_Control_Systems": 6
+      },
+      {
+        "Circulation_History": 4
+      },
+      {
+        "Document_Drafts_AppearsIn_cre_Doc_Control_Systems": 8
+      },
+      {
+        "Ref_Shipping_Agents_AppearsIn_cre_Doc_Control_Systems": 15
+      }
+    ],
+    "movie_1": [
+      {
+        "Rating": 12
+      }
+    ],
+    "orchestra": [
+      {
+        "conductor_AppearsIn_orchestra": 12
+      },
+      {
+        "orchestra_AppearsIn_orchestra": 11
+      }
+    ],
+    "customers_card_transactions": [
+      {
+        "Financial_Transactions": 15
+      }
+    ],
+    "tracking_software_problems": [
+      {
+        "Problems_AppearsIn_tracking_software_problems": 15
+      },
+      {
+        "Staff_AppearsIn_tracking_software_problems": 15
+      },
+      {
+        "Problem_Status_Codes_AppearsIn_tracking_software_problems": 15
+      },
+      {
+        "Problem_Category_Codes_AppearsIn_tracking_software_problems": 15
+      }
+    ],
+    "local_govt_and_lot": [
+      {
+        "Organizations_AppearsIn_local_govt_and_lot": 15
+      },
+      {
+        "Customers_AppearsIn_local_govt_and_lot": 13
+      },
+      {
+        "Things_AppearsIn_local_govt_and_lot": 15
+      },
+      {
+        "Things_AppearsIn_local_govt_and_lot": 13
+      },
+      {
+        "Properties_AppearsIn_local_govt_and_lot": 15
+      },
+      {
+        "Organizations_AppearsIn_local_govt_and_lot": 15
+      },
+      {
+        "Residents_AppearsIn_local_govt_and_lot": 13
+      },
+      {
+        "Customer_Events_AppearsIn_local_govt_and_lot": 13
+      },
+      {
+        "Things_AppearsIn_local_govt_and_lot": 18
+      },
+      {
+        "Residents_Services": 11
+      }
+    ],
+    "riding_club": [
+      {
+        "club_AppearsIn_riding_club": 5
+      },
+      {
+        "player_coach": 7
+      },
+      {
+        "club_AppearsIn_riding_club": 6
+      }
+    ],
+    "county_public_safety": [
+      {
+        "county_public_safety_AppearsIn_county_public_safety": 17
+      }
+    ],
+    "icfp_1": [
+      {
+        "Authors_AppearsIn_icfp_1": 14
+      },
+      {
+        "Inst_AppearsIn_icfp_1": 14
+      },
+      {
+        "Papers_AppearsIn_icfp_1": 14
+      }
+    ],
+    "farm": [
+      {
+        "competition_record": 12
+      },
+      {
+        "city_AppearsIn_farm": 6
+      }
+    ],
+    "customers_and_products_contacts": [
+      {
+        "Customer_Address_History": 18
+      },
+      {
+        "Customers_AppearsIn_customers_and_products_contacts": 15
+      },
+      {
+        "Order_Items": 14
+      }
+    ],
+    "insurance_policies": [
+      {
+        "Customers_AppearsIn_insurance_policies": 15
+      },
+      {
+        "Customer_Policies_AppearsIn_insurance_policies": 15
+      },
+      {
+        "Settlements_AppearsIn_insurance_policies": 15
+      },
+      {
+        "Claims_AppearsIn_insurance_policies": 15
+      }
+    ],
+    "local_govt_mdm": [
+      {
+        "CMI_Cross_References_AppearsIn_local_govt_mdm": 4
+      },
+      {
+        "CMI_Cross_References_AppearsIn_local_govt_mdm": 2
+      },
+      {
+        "CMI_Cross_References_AppearsIn_local_govt_mdm": 4
+      },
+      {
+        "Customer_Master_Index_AppearsIn_local_govt_mdm": 21
+      },
+      {
+        "CMI_Cross_References_AppearsIn_local_govt_mdm": 6
+      },
+      {
+        "CMI_Cross_References_AppearsIn_local_govt_mdm": 3
+      },
+      {
+        "CMI_Cross_References_AppearsIn_local_govt_mdm": 6
+      }
+    ],
+    "student_assessment": [
+      {
+        "Candidates_AppearsIn_student_assessment": 5
+      },
+      {
+        "People_Addresses": 8
+      },
+      {
+        "People_AppearsIn_student_assessment": 8
+      },
+      {
+        "People_AppearsIn_student_assessment": 8
+      }
+    ],
+    "college_3": [
+      {
+        "Minor_in": 10
+      },
+      {
+        "Course": 46
+      },
+      {
+        "Member_of": 63
+      }
+    ],
+    "customers_campaigns_ecommerce": [
+      {
+        "Customers_AppearsIn_customers_campaigns_ecommerce": 15
+      },
+      {
+        "Mailshot_Customers": 13
+      },
+      {
+        "Customer_Addresses": 15
+      },
+      {
+        "Order_Items": 15
+      }
+    ],
+    "insurance_fnol": [
+      {
+        "Customers_Policies": 14
+      },
+      {
+        "Claims_AppearsIn_insurance_fnol": 10
+      },
+      {
+        "First_Notification_of_Loss_AppearsIn_insurance_fnol": 10
+      }
+    ],
+    "entertainment_awards": [
+      {
+        "nomination": 6
+      }
+    ],
+    "theme_gallery": [
+      {
+        "exhibition_AppearsIn_theme_gallery": 13
+      },
+      {
+        "artist_AppearsIn_theme_gallery": 6
+      }
+    ],
+    "music_4": [
+      {
+        "volume_AppearsIn_music_4": 9
+      },
+      {
+        "artist_AppearsIn_music_4": 10
+      }
+    ],
+    "college_1": [
+      {
+        "CLASS": 8
+      },
+      {
+        "ENROLL": 6
+      },
+      {
+        "PROFESSOR": 22
+      },
+      {
+        "DEPARTMENT_AppearsIn_college_1": 6
+      },
+      {
+        "DEPARTMENT_AppearsIn_college_1": 6
+      }
+    ],
+    "customers_and_addresses": [
+      {
+        "Customer_Addresses": 15
+      },
+      {
+        "Order_Items": 12
+      },
+      {
+        "Customers_AppearsIn_customers_and_addresses": 15
+      }
+    ],
+    "tvshow": [
+      {
+        "TV_Channel_AppearsIn_tvshow": 12
+      },
+      {
+        "TV_Channel_AppearsIn_tvshow": 12
+      }
+    ],
+    "match_season": [
+      {
+        "team_AppearsIn_match_season": 10
+      },
+      {
+        "match_season": 12
+      }
+    ],
+    "game_injury": [
+      {
+        "stadium_AppearsIn_game_injury": 20
+      },
+      {
+        "game_AppearsIn_game_injury": 15
+      }
+    ],
+    "apartment_rentals": [
+      {
+        "Apartments_AppearsIn_apartment_rentals": 7
+      },
+      {
+        "Apartment_Bookings": 15
+      },
+      {
+        "View_Unit_Status": 20
+      },
+      {
+        "Apartment_Buildings_AppearsIn_apartment_rentals": 15
+      }
+    ],
+    "gas_company": [
+      {
+        "station_company": 6
+      }
+    ],
+    "store_product": [
+      {
+        "store_district": 5
+      },
+      {
+        "store_product": 15
+      }
+    ],
+    "course_teach": [
+      {
+        "course_arrange": 6
+      }
+    ],
+    "program_share": [
+      {
+        "broadcast": 11
+      },
+      {
+        "broadcast_share": 9
+      }
+    ],
+    "flight_company": [
+      {
+        "flight": 12
+      }
+    ],
+    "journal_committee": [
+      {
+        "journal_committee": 7
+      }
+    ],
+    "candidate_poll": [
+      {
+        "people_AppearsIn_candidate_poll": 6
+      }
+    ],
+    "swimming": [
+      {
+        "record": 13
+      },
+      {
+        "stadium_AppearsIn_swimming": 6
+      }
+    ],
+    "dog_kennels": [
+      {
+        "Professionals_AppearsIn_dog_kennels": 15
+      },
+      {
+        "Dogs_AppearsIn_dog_kennels": 15
+      },
+      {
+        "Owners_AppearsIn_dog_kennels": 15
+      },
+      {
+        "Breeds_AppearsIn_dog_kennels": 15
+      },
+      {
+        "Sizes_AppearsIn_dog_kennels": 15
+      },
+      {
+        "Treatment_Types_AppearsIn_dog_kennels": 15
+      }
+    ],
+    "music_1": [
+      {
+        "files_AppearsIn_music_1": 6
+      },
+      {
+        "artist_AppearsIn_music_1": 6
+      },
+      {
+        "genre_AppearsIn_music_1": 6
+      },
+      {
+        "artist_AppearsIn_music_1": 6
+      },
+      {
+        "genre_AppearsIn_music_1": 6
+      }
+    ],
+    "car_1": [
+      {
+        "continents_AppearsIn_car_1": 15
+      },
+      {
+        "car_makers_AppearsIn_car_1": 35
+      },
+      {
+        "model_list_AppearsIn_car_1": 405
+      },
+      {
+        "car_names_AppearsIn_car_1": 406
+      }
+    ],
+    "election": [
+      {
+        "election": 7
+      }
+    ],
+    "storm_record": [
+      {
+        "affected_region": 6
+      }
+    ],
+    "allergy_1": [
+      {
+        "Has_Allergy": 58
+      }
+    ],
+    "department_store": [
+      {
+        "Department_Stores_AppearsIn_department_store": 5
+      },
+      {
+        "Order_Items": 14
+      },
+      {
+        "Staff_Department_Assignments": 15
+      },
+      {
+        "Supplier_Addresses": 4
+      },
+      {
+        "Department_Store_Chain_AppearsIn_department_store": 15
+      },
+      {
+        "Product_Suppliers": 15
+      },
+      {
+        "Customers_AppearsIn_department_store": 15
+      },
+      {
+        "Customer_Addresses": 15
+      }
+    ],
+    "insurance_and_eClaims": [
+      {
+        "Policies_AppearsIn_insurance_and_eClaims": 15
+      },
+      {
+        "Customers_AppearsIn_insurance_and_eClaims": 15
+      },
+      {
+        "Claims_Documents": 13
+      },
+      {
+        "Claims_Processing": 14
+      }
+    ],
+    "device": [
+      {
+        "stock": 8
+      }
+    ],
+    "customer_deliveries": [
+      {
+        "Delivery_Route_Locations": 15
+      },
+      {
+        "Customer_Addresses": 15
+      },
+      {
+        "Regular_Order_Products": 15
+      },
+      {
+        "Addresses_AppearsIn_customer_deliveries": 15
+      },
+      {
+        "Regular_Orders_AppearsIn_customer_deliveries": 15
+      },
+      {
+        "Actual_Order_Products": 14
+      },
+      {
+        "Customers_AppearsIn_customer_deliveries": 15
+      }
+    ],
+    "ship_mission": [
+      {
+        "ship_AppearsIn_ship_mission": 7
+      }
+    ],
+    "cre_Docs_and_Epenses": [
+      {
+        "Documents": 10
+      },
+      {
+        "Documents_AppearsIn_cre_Docs_and_Epenses": 2
+      },
+      {
+        "Documents_with_Expenses": 10
+      },
+      {
+        "Statements_AppearsIn_cre_Docs_and_Epenses": 15
+      }
+    ],
+    "company_office": [
+      {
+        "Office_locations": 16
+      }
+    ],
+    "machine_repair": [
+      {
+        "technician_AppearsIn_machine_repair": 9
+      },
+      {
+        "repair_AppearsIn_machine_repair": 9
+      },
+      {
+        "machine_AppearsIn_machine_repair": 9
+      }
+    ],
+    "e_learning": [
+      {
+        "Courses": 13
+      },
+      {
+        "Student_Course_Enrolment": 19
+      }
+    ],
+    "activity_1": [
+      {
+        "Participates_in": 70
+      },
+      {
+        "Faculty_Participates_in": 39
+      }
+    ],
+    "behavior_monitoring": [
+      {
+        "Student_Addresses": 19
+      },
+      {
+        "Detention": 14
+      },
+      {
+        "Assessment_Notes": 14
+      },
+      {
+        "Addresses_AppearsIn_behavior_monitoring": 15
+      },
+      {
+        "Behavior_Incident": 14
+      }
+    ],
+    "document_management": [
+      {
+        "Document_Functional_Areas": 14
+      },
+      {
+        "Document_Structures_AppearsIn_document_management": 15
+      },
+      {
+        "Documents_AppearsIn_document_management": 15
+      },
+      {
+        "Roles_AppearsIn_document_management": 15
+      },
+      {
+        "Document_Sections_Images": 20
+      }
+    ],
+    "coffee_shop": [
+      {
+        "shop_AppearsIn_coffee_shop": 10
+      },
+      {
+        "member_AppearsIn_coffee_shop": 6
+      }
+    ],
+    "perpetrator": [
+      {
+        "people_AppearsIn_perpetrator": 5
+      }
+    ],
+    "hr_1": [
+      {
+        "employees_AppearsIn_hr_1": 10
+      },
+      {
+        "departments_AppearsIn_hr_1": 10
+      },
+      {
+        "jobs_AppearsIn_hr_1": 10
+      },
+      {
+        "countries_AppearsIn_hr_1": 21
+      },
+      {
+        "employees": 19
+      },
+      {
+        "regions_AppearsIn_hr_1": 25
+      }
+    ],
+    "aircraft": [
+      {
+        "airport_aircraft": 4
+      }
+    ],
+    "soccer_2": [
+      {
+        "Tryout": 6
+      }
+    ],
+    "tracking_share_transactions": [
+      {
+        "Transactions_AppearsIn_tracking_share_transactions": 15
+      },
+      {
+        "Transactions": 12
+      },
+      {
+        "Investors_AppearsIn_tracking_share_transactions": 15
+      },
+      {
+        "Transactions_Lots": 15
+      }
+    ],
+    "product_catalog": [
+      {
+        "Catalogs_AppearsIn_product_catalog": 3
+      },
+      {
+        "Catalog_Contents_Additional_Attributes": 12
+      }
+    ],
+    "assets_maintenance": [
+      {
+        "Asset_Parts": 14
+      },
+      {
+        "Fault_Log_Parts": 15
+      },
+      {
+        "Engineer_Skills": 19
+      },
+      {
+        "Fault_Log_AppearsIn_assets_maintenance": 15
+      },
+      {
+        "Staff_AppearsIn_assets_maintenance": 15
+      },
+      {
+        "Skills_Required_To_Fix": 13
+      },
+      {
+        "Fault_Log": 14
+      },
+      {
+        "Maintenance_Engineers_AppearsIn_assets_maintenance": 15
+      },
+      {
+        "Assets": 14
+      },
+      {
+        "Parts_AppearsIn_assets_maintenance": 15
+      },
+      {
+        "Third_Party_Companies_AppearsIn_assets_maintenance": 15
+      }
+    ],
+    "tracking_orders": [
+      {
+        "Shipments": 15
+      },
+      {
+        "Customers_AppearsIn_tracking_orders": 15
+      },
+      {
+        "Order_Items": 15
+      },
+      {
+        "Shipment_Items": 15
+      }
+    ],
+    "local_govt_in_alabama": [
+      {
+        "Services_AppearsIn_local_govt_in_alabama": 15
+      },
+      {
+        "Participants_in_Events": 18
+      }
+    ],
+    "sports_competition": [
+      {
+        "club_AppearsIn_sports_competition": 6
+      },
+      {
+        "club_AppearsIn_sports_competition": 15
+      }
+    ],
+    "body_builder": [
+      {
+        "people_AppearsIn_body_builder": 5
+      }
+    ],
+    "school_bus": [
+      {
+        "school_bus": 5
+      }
+    ],
+    "pilot_record": [
+      {
+        "pilot_record": 6
+      }
+    ],
+    "small_bank_1": [
+      {
+        "ACCOUNTS_AppearsIn_small_bank_1": 6
+      },
+      {
+        "ACCOUNTS_AppearsIn_small_bank_1": 7
+      }
+    ],
+    "roller_coaster": [
+      {
+        "country_AppearsIn_roller_coaster": 6
+      }
+    ],
+    "battle_death": [
+      {
+        "battle_AppearsIn_battle_death": 7
+      },
+      {
+        "ship_AppearsIn_battle_death": 13
+      }
+    ],
+    "club_1": [
+      {
+        "Member_of_club": 4
+      }
+    ],
+    "news_report": [
+      {
+        "news_report": 7
+      }
+    ],
+    "train_station": [
+      {
+        "train_station": 11
+      }
+    ],
+    "employee_hire_evaluation": [
+      {
+        "hiring": 7
+      }
+    ],
+    "solvency_ii": [
+      {
+        "Parties_in_Events": 15
+      },
+      {
+        "Addresses_AppearsIn_solvency_ii": 15
+      },
+      {
+        "Finances_AppearsIn_solvency_ii": 15
+      },
+      {
+        "Events_AppearsIn_solvency_ii": 12
+      },
+      {
+        "Products_in_Events": 13
+      },
+      {
+        "Events_AppearsIn_solvency_ii": 15
+      },
+      {
+        "Locations_AppearsIn_solvency_ii": 15
+      }
+    ],
+    "cre_Doc_Tracking_DB": [
+      {
+        "All_Documents_AppearsIn_cre_Doc_Tracking_DB": 15
+      },
+      {
+        "Ref_Calendar_AppearsIn_cre_Doc_Tracking_DB": 1
+      },
+      {
+        "All_Documents_AppearsIn_cre_Doc_Tracking_DB": 11
+      },
+      {
+        "All_Documents": 14
+      },
+      {
+        "Roles_AppearsIn_cre_Doc_Tracking_DB": 15
+      },
+      {
+        "Ref_Locations_AppearsIn_cre_Doc_Tracking_DB": 15
+      }
+    ],
+    "film_rank": [
+      {
+        "film_market_estimation": 7
+      }
+    ],
+    "products_for_hire": [
+      {
+        "Discount_Coupons_AppearsIn_products_for_hire": 15
+      },
+      {
+        "Payments": 15
+      },
+      {
+        "View_Product_Availability": 4
+      },
+      {
+        "Products_Booked": 12
+      }
+    ],
+    "wine_1": [
+      {
+        "wine": 149
+      }
+    ],
+    "dorm_1": [
+      {
+        "Has_amenity": 40
+      },
+      {
+        "Lives_in": 31
+      }
+    ],
+    "game_1": [
+      {
+        "Plays_Games": 10
+      }
+    ],
+    "musical": [
+      {
+        "musical_AppearsIn_musical": 9
+      }
+    ],
+    "poker_player": [
+      {
+        "people_AppearsIn_poker_player": 5
+      }
+    ],
+    "gymnast": [
+      {
+        "people_AppearsIn_gymnast": 7
+      }
+    ],
+    "manufactory_1": [
+      {
+        "Manufacturers_AppearsIn_manufactory_1": 11
+      }
+    ],
+    "cre_Doc_Template_Mgt": [
+      {
+        "Ref_Template_Types_AppearsIn_cre_Doc_Template_Mgt": 20
+      },
+      {
+        "Documents_AppearsIn_cre_Doc_Template_Mgt": 15
+      },
+      {
+        "Templates_AppearsIn_cre_Doc_Template_Mgt": 15
+      }
+    ],
+    "decoration_competition": [
+      {
+        "college_AppearsIn_decoration_competition": 10
+      },
+      {
+        "member_AppearsIn_decoration_competition": 6
+      }
+    ],
+    "singer": [
+      {
+        "singer_AppearsIn_singer": 8
+      }
+    ],
+    "climbing": [
+      {
+        "mountain_AppearsIn_climbing": 10
+      }
+    ],
+    "cinema": [
+      {
+        "schedule": 7
+      }
+    ],
+    "protein_institute": [
+      {
+        "building_AppearsIn_protein_institute": 11
+      },
+      {
+        "Institution_AppearsIn_protein_institute": 5
+      }
+    ],
+    "workshop_paper": [
+      {
+        "Acceptance": 6
+      }
+    ],
+    "school_player": [
+      {
+        "school_AppearsIn_school_player": 23
+      },
+      {
+        "school_AppearsIn_school_player": 22
+      },
+      {
+        "school_AppearsIn_school_player": 6
+      }
+    ],
+    "scientist_1": [
+      {
+        "AssignedTo": 12
+      }
+    ],
+    "party_people": [
+      {
+        "party_events": 7
+      },
+      {
+        "region_AppearsIn_party_people": 5
+      }
+    ],
+    "twitter_1": [
+      {
+        "user_profiles_AppearsIn_twitter_1": 8
+      }
+    ],
+    "medicine_enzyme_interaction": [
+      {
+        "medicine_enzyme_interaction": 19
+      }
+    ],
+    "manufacturer": [
+      {
+        "furniture_manufacte": 5
+      }
+    ],
+    "flight_1": [
+      {
+        "certificate": 69
+      },
+      {
+        "aircraft_AppearsIn_flight_1": 10
+      }
+    ],
+    "mountain_photos": [
+      {
+        "photos": 9
+      }
+    ],
+    "department_management": [
+      {
+        "management": 5
+      }
+    ],
+    "railway": [
+      {
+        "railway_AppearsIn_railway": 9
+      },
+      {
+        "railway_manage": 4
+      }
+    ],
+    "inn_1": [
+      {
+        "Rooms_AppearsIn_inn_1": 600
+      }
+    ],
+    "university_basketball": [
+      {
+        "university_AppearsIn_university_basketball": 4
+      }
+    ],
+    "company_employee": [
+      {
+        "employment": 5
+      }
+    ],
+    "city_record": [
+      {
+        "city_AppearsIn_city_record": 8
+      }
+    ],
+    "ship_1": [
+      {
+        "Ship_AppearsIn_ship_1": 7
+      }
+    ],
+    "pets_1": [
+      {
+        "Has_Pet": 3
+      }
+    ],
+    "voter_1": [
+      {
+        "VOTES": 64
+      }
+    ],
+    "epinions_1": [
+      {
+        "review": 6
+      }
+    ],
+    "book_2": [
+      {
+        "book_AppearsIn_book_2": 7
+      }
+    ],
+    "party_host": [
+      {
+        "party_host": 6
+      }
+    ]
+  },
+  "labels_counter": 11540,
+  "curated_edges": 5639,
+  "db_counter_in_labels": 155,
+  "type_counter": 7776,
+  "db_counter_in_type": 128,
+  "total_unique_db": [
+    "academic",
+    "activity_1",
+    "aircraft",
+    "allergy_1",
+    "apartment_rentals",
+    "architecture",
+    "assets_maintenance",
+    "battle_death",
+    "behavior_monitoring",
+    "body_builder",
+    "book_2",
+    "browser_web",
+    "candidate_poll",
+    "car_1",
+    "cinema",
+    "city_record",
+    "climbing",
+    "club_1",
+    "coffee_shop",
+    "college_1",
+    "college_3",
+    "company_1",
+    "company_employee",
+    "company_office",
+    "concert_singer",
+    "county_public_safety",
+    "course_teach",
+    "cre_Doc_Control_Systems",
+    "cre_Doc_Template_Mgt",
+    "cre_Doc_Tracking_DB",
+    "cre_Docs_and_Epenses",
+    "cre_Drama_Workshop_Groups",
+    "cre_Theme_park",
+    "csu_1",
+    "culture_company",
+    "customer_complaints",
+    "customer_deliveries",
+    "customers_and_addresses",
+    "customers_and_invoices",
+    "customers_and_products_contacts",
+    "customers_campaigns_ecommerce",
+    "customers_card_transactions",
+    "debate",
+    "decoration_competition",
+    "department_management",
+    "department_store",
+    "device",
+    "document_management",
+    "dog_kennels",
+    "dorm_1",
+    "driving_school",
+    "e_government",
+    "e_learning",
+    "election",
+    "election_representative",
+    "employee_hire_evaluation",
+    "entertainment_awards",
+    "entrepreneur",
+    "epinions_1",
+    "farm",
+    "film_rank",
+    "flight_1",
+    "flight_2",
+    "flight_company",
+    "game_1",
+    "game_injury",
+    "gas_company",
+    "geo",
+    "gymnast",
+    "hospital_1",
+    "hr_1",
+    "icfp_1",
+    "imdb",
+    "inn_1",
+    "insurance_and_eClaims",
+    "insurance_fnol",
+    "insurance_policies",
+    "journal_committee",
+    "loan_1",
+    "local_govt_and_lot",
+    "local_govt_in_alabama",
+    "local_govt_mdm",
+    "machine_repair",
+    "manufactory_1",
+    "manufacturer",
+    "match_season",
+    "medicine_enzyme_interaction",
+    "mountain_photos",
+    "movie_1",
+    "museum_visit",
+    "music_1",
+    "music_2",
+    "music_4",
+    "musical",
+    "network_1",
+    "network_2",
+    "news_report",
+    "orchestra",
+    "party_host",
+    "party_people",
+    "performance_attendance",
+    "perpetrator",
+    "pets_1",
+    "phone_1",
+    "phone_market",
+    "pilot_record",
+    "poker_player",
+    "product_catalog",
+    "products_for_hire",
+    "products_gen_characteristics",
+    "program_share",
+    "protein_institute",
+    "race_track",
+    "railway",
+    "real_estate_properties",
+    "restaurant_1",
+    "restaurants",
+    "riding_club",
+    "roller_coaster",
+    "scholar",
+    "school_bus",
+    "school_finance",
+    "school_player",
+    "scientist_1",
+    "ship_1",
+    "ship_mission",
+    "shop_membership",
+    "singer",
+    "small_bank_1",
+    "soccer_2",
+    "solvency_ii",
+    "sports_competition",
+    "station_weather",
+    "store_product",
+    "storm_record",
+    "student_1",
+    "student_assessment",
+    "student_transcripts_tracking",
+    "swimming",
+    "theme_gallery",
+    "tracking_grants_for_research",
+    "tracking_orders",
+    "tracking_share_transactions",
+    "tracking_software_problems",
+    "train_station",
+    "tvshow",
+    "twitter_1",
+    "university_basketball",
+    "voter_1",
+    "voter_2",
+    "wedding",
+    "wine_1",
+    "workshop_paper",
+    "wrestler",
+    "yelp"
+  ],
+  "num_of_total_unique_db": 155
+}

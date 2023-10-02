@@ -1,0 +1,1441 @@
+[
+  {
+    "db_name": "bike_1",
+    "table_name": "status",
+    "num_of_rows": 8487,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "station_id",
+      "bikes_available",
+      "docks_available",
+      "time"
+    ],
+    "num_of_headers": 4,
+    "table_constraints": [
+      {
+        "this_table": "status",
+        "column": "station_id",
+        "ref_table": "station",
+        "ref_column": "id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "bike_1",
+    "table_name": "trip",
+    "num_of_rows": 9959,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "id"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "id",
+      "duration",
+      "start_date",
+      "start_station_name",
+      "start_station_id",
+      "end_date",
+      "end_station_name",
+      "end_station_id",
+      "bike_id",
+      "subscription_type",
+      "zip_code"
+    ],
+    "num_of_headers": 11,
+    "table_constraints": [],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "wta_1",
+    "table_name": "players",
+    "num_of_rows": 20662,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "player_id"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "player_id",
+      "first_name",
+      "last_name",
+      "hand",
+      "birth_date",
+      "country_code"
+    ],
+    "num_of_headers": 6,
+    "table_constraints": [],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "wta_1",
+    "table_name": "rankings",
+    "num_of_rows": 510437,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "ranking_date",
+      "ranking",
+      "player_id",
+      "ranking_points",
+      "tours"
+    ],
+    "num_of_headers": 5,
+    "table_constraints": [
+      {
+        "this_table": "rankings",
+        "column": "player_id",
+        "ref_table": "players",
+        "ref_column": "player_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": true,
+    "zzy": true
+  },
+  {
+    "db_name": "formula_1",
+    "table_name": "constructorStandings",
+    "num_of_rows": 11896,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "constructorStandingsId"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "constructorStandingsId",
+      "raceId",
+      "constructorId",
+      "points",
+      "position",
+      "positionText",
+      "wins"
+    ],
+    "num_of_headers": 7,
+    "table_constraints": [
+      {
+        "this_table": "constructorStandings",
+        "column": "raceId",
+        "ref_table": "races",
+        "ref_column": "raceId"
+      },
+      {
+        "this_table": "constructorStandings",
+        "column": "constructorId",
+        "ref_table": "constructors",
+        "ref_column": "constructorId"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "formula_1",
+    "table_name": "results",
+    "num_of_rows": 23777,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "resultId"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "resultId",
+      "raceId",
+      "driverId",
+      "constructorId",
+      "number",
+      "grid",
+      "position",
+      "positionText",
+      "positionOrder",
+      "points",
+      "laps",
+      "time",
+      "milliseconds",
+      "fastestLap",
+      "rank",
+      "fastestLapTime",
+      "fastestLapSpeed",
+      "statusId"
+    ],
+    "num_of_headers": 18,
+    "table_constraints": [
+      {
+        "this_table": "results",
+        "column": "driverId",
+        "ref_table": "drivers",
+        "ref_column": "driverId"
+      },
+      {
+        "this_table": "results",
+        "column": "raceId",
+        "ref_table": "races",
+        "ref_column": "raceId"
+      },
+      {
+        "this_table": "results",
+        "column": "constructorId",
+        "ref_table": "constructors",
+        "ref_column": "constructorId"
+      }
+    ],
+    "hyper_edge_candidate": true,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "formula_1",
+    "table_name": "driverStandings",
+    "num_of_rows": 31726,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "driverStandingsId"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "driverStandingsId",
+      "raceId",
+      "driverId",
+      "points",
+      "position",
+      "positionText",
+      "wins"
+    ],
+    "num_of_headers": 7,
+    "table_constraints": [
+      {
+        "this_table": "driverStandings",
+        "column": "driverId",
+        "ref_table": "drivers",
+        "ref_column": "driverId"
+      },
+      {
+        "this_table": "driverStandings",
+        "column": "raceId",
+        "ref_table": "races",
+        "ref_column": "raceId"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "formula_1",
+    "table_name": "constructorResults",
+    "num_of_rows": 11142,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "constructorResultsId"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "constructorResultsId",
+      "raceId",
+      "constructorId",
+      "points",
+      "status"
+    ],
+    "num_of_headers": 5,
+    "table_constraints": [
+      {
+        "this_table": "constructorResults",
+        "column": "raceId",
+        "ref_table": "races",
+        "ref_column": "raceId"
+      },
+      {
+        "this_table": "constructorResults",
+        "column": "constructorId",
+        "ref_table": "constructors",
+        "ref_column": "constructorId"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "formula_1",
+    "table_name": "qualifying",
+    "num_of_rows": 7516,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "qualifyId"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "qualifyId",
+      "raceId",
+      "driverId",
+      "constructorId",
+      "number",
+      "position",
+      "q1",
+      "q2",
+      "q3"
+    ],
+    "num_of_headers": 9,
+    "table_constraints": [
+      {
+        "this_table": "qualifying",
+        "column": "driverId",
+        "ref_table": "drivers",
+        "ref_column": "driverId"
+      },
+      {
+        "this_table": "qualifying",
+        "column": "raceId",
+        "ref_table": "races",
+        "ref_column": "raceId"
+      },
+      {
+        "this_table": "qualifying",
+        "column": "constructorId",
+        "ref_table": "constructors",
+        "ref_column": "constructorId"
+      }
+    ],
+    "hyper_edge_candidate": true,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "college_2",
+    "table_name": "takes",
+    "num_of_rows": 30000,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "ID"
+      ],
+      [
+        "course_id"
+      ],
+      [
+        "sec_id"
+      ],
+      [
+        "semester"
+      ],
+      [
+        "year"
+      ]
+    ],
+    "if_compound_pk": true,
+    "table_headers": [
+      "ID",
+      "course_id",
+      "sec_id",
+      "semester",
+      "year",
+      "grade"
+    ],
+    "num_of_headers": 6,
+    "table_constraints": [
+      {
+        "this_table": "takes",
+        "column": "ID",
+        "ref_table": "student",
+        "ref_column": "ID"
+      },
+      {
+        "this_table": "takes",
+        "column": "course_id",
+        "ref_table": "section",
+        "ref_column": "course_id"
+      },
+      {
+        "this_table": "takes",
+        "column": "sec_id",
+        "ref_table": "section",
+        "ref_column": "sec_id"
+      },
+      {
+        "this_table": "takes",
+        "column": "semester",
+        "ref_table": "section",
+        "ref_column": "semester"
+      },
+      {
+        "this_table": "takes",
+        "column": "year",
+        "ref_table": "section",
+        "ref_column": "year"
+      }
+    ],
+    "hyper_edge_candidate": true,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "sakila_1",
+    "table_name": "film_actor",
+    "num_of_rows": 5462,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "actor_id"
+      ],
+      [
+        "film_id"
+      ]
+    ],
+    "if_compound_pk": true,
+    "table_headers": [
+      "actor_id",
+      "film_id",
+      "last_update"
+    ],
+    "num_of_headers": 3,
+    "table_constraints": [
+      {
+        "this_table": "film_actor",
+        "column": "film_id",
+        "ref_table": "film",
+        "ref_column": "film_id"
+      },
+      {
+        "this_table": "film_actor",
+        "column": "actor_id",
+        "ref_table": "actor",
+        "ref_column": "actor_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "sakila_1",
+    "table_name": "inventory",
+    "num_of_rows": 4581,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "inventory_id"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "inventory_id",
+      "film_id",
+      "store_id",
+      "last_update"
+    ],
+    "num_of_headers": 4,
+    "table_constraints": [
+      {
+        "this_table": "inventory",
+        "column": "film_id",
+        "ref_table": "film",
+        "ref_column": "film_id"
+      },
+      {
+        "this_table": "inventory",
+        "column": "store_id",
+        "ref_table": "store",
+        "ref_column": "store_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "sakila_1",
+    "table_name": "payment",
+    "num_of_rows": 16049,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "payment_id"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "payment_id",
+      "customer_id",
+      "staff_id",
+      "rental_id",
+      "amount",
+      "payment_date",
+      "last_update"
+    ],
+    "num_of_headers": 7,
+    "table_constraints": [
+      {
+        "this_table": "payment",
+        "column": "staff_id",
+        "ref_table": "staff",
+        "ref_column": "staff_id"
+      },
+      {
+        "this_table": "payment",
+        "column": "customer_id",
+        "ref_table": "customer",
+        "ref_column": "customer_id"
+      },
+      {
+        "this_table": "payment",
+        "column": "rental_id",
+        "ref_table": "rental",
+        "ref_column": "rental_id"
+      }
+    ],
+    "hyper_edge_candidate": true,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "sakila_1",
+    "table_name": "rental",
+    "num_of_rows": 16044,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "rental_id"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "rental_id",
+      "rental_date",
+      "inventory_id",
+      "customer_id",
+      "return_date",
+      "staff_id",
+      "last_update"
+    ],
+    "num_of_headers": 7,
+    "table_constraints": [
+      {
+        "this_table": "rental",
+        "column": "customer_id",
+        "ref_table": "customer",
+        "ref_column": "customer_id"
+      },
+      {
+        "this_table": "rental",
+        "column": "inventory_id",
+        "ref_table": "inventory",
+        "ref_column": "inventory_id"
+      },
+      {
+        "this_table": "rental",
+        "column": "staff_id",
+        "ref_table": "staff",
+        "ref_column": "staff_id"
+      }
+    ],
+    "hyper_edge_candidate": true,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "flight_4",
+    "table_name": "routes",
+    "num_of_rows": 67240,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "rid"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "rid",
+      "dst_apid",
+      "dst_ap",
+      "src_apid",
+      "src_ap",
+      "alid",
+      "airline",
+      "codeshare"
+    ],
+    "num_of_headers": 8,
+    "table_constraints": [
+      {
+        "this_table": "routes",
+        "column": "alid",
+        "ref_table": "airlines",
+        "ref_column": "alid"
+      },
+      {
+        "this_table": "routes",
+        "column": "src_apid",
+        "ref_table": "airports",
+        "ref_column": "apid"
+      },
+      {
+        "this_table": "routes",
+        "column": "dst_apid",
+        "ref_table": "airports",
+        "ref_column": "apid"
+      }
+    ],
+    "hyper_edge_candidate": true,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "flight_4",
+    "table_name": "airports",
+    "num_of_rows": 7184,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "apid"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "apid",
+      "name",
+      "city",
+      "country",
+      "x",
+      "y",
+      "elevation",
+      "iata",
+      "icao"
+    ],
+    "num_of_headers": 9,
+    "table_constraints": [],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "flight_4",
+    "table_name": "airlines",
+    "num_of_rows": 6162,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "alid"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "alid",
+      "name",
+      "iata",
+      "icao",
+      "callsign",
+      "country",
+      "active"
+    ],
+    "num_of_headers": 7,
+    "table_constraints": [],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "soccer_1",
+    "table_name": "Player_Attributes",
+    "num_of_rows": 183978,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "id"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "id",
+      "player_fifa_api_id",
+      "player_api_id",
+      "date",
+      "overall_rating",
+      "potential",
+      "preferred_foot",
+      "attacking_work_rate",
+      "defensive_work_rate",
+      "crossing",
+      "finishing",
+      "heading_accuracy",
+      "short_passing",
+      "volleys",
+      "dribbling",
+      "curve",
+      "free_kick_accuracy",
+      "long_passing",
+      "ball_control",
+      "acceleration",
+      "sprint_speed",
+      "agility",
+      "reactions",
+      "balance",
+      "shot_power",
+      "jumping",
+      "stamina",
+      "strength",
+      "long_shots",
+      "aggression",
+      "interceptions",
+      "positioning",
+      "vision",
+      "penalties",
+      "marking",
+      "standing_tackle",
+      "sliding_tackle",
+      "gk_diving",
+      "gk_handling",
+      "gk_kicking",
+      "gk_positioning",
+      "gk_reflexes"
+    ],
+    "num_of_headers": 42,
+    "table_constraints": [
+      {
+        "this_table": "Player_Attributes",
+        "column": "player_api_id",
+        "ref_table": "Player",
+        "ref_column": "player_api_id"
+      },
+      {
+        "this_table": "Player_Attributes",
+        "column": "player_fifa_api_id",
+        "ref_table": "Player",
+        "ref_column": "player_fifa_api_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "soccer_1",
+    "table_name": "Player",
+    "num_of_rows": 11060,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "id"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "id",
+      "player_api_id",
+      "player_name",
+      "player_fifa_api_id",
+      "birthday",
+      "height",
+      "weight"
+    ],
+    "num_of_headers": 7,
+    "table_constraints": [],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "all_star",
+    "num_of_rows": 5069,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "player_id",
+      "year",
+      "game_num",
+      "game_id",
+      "team_id",
+      "league_id",
+      "gp",
+      "starting_pos"
+    ],
+    "num_of_headers": 8,
+    "table_constraints": [
+      {
+        "this_table": "all_star",
+        "column": "player_id",
+        "ref_table": "player",
+        "ref_column": "player_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "appearances",
+    "num_of_rows": 100951,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "year",
+      "team_id",
+      "league_id",
+      "player_id",
+      "g_all",
+      "gs",
+      "g_batting",
+      "g_defense",
+      "g_p",
+      "g_c",
+      "g_1b",
+      "g_2b",
+      "g_3b",
+      "g_ss",
+      "g_lf",
+      "g_cf",
+      "g_rf",
+      "g_of",
+      "g_dh",
+      "g_ph",
+      "g_pr"
+    ],
+    "num_of_headers": 21,
+    "table_constraints": [
+      {
+        "this_table": "appearances",
+        "column": "player_id",
+        "ref_table": "player",
+        "ref_column": "player_id"
+      },
+      {
+        "this_table": "appearances",
+        "column": "team_id",
+        "ref_table": "team",
+        "ref_column": "team_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "player_award",
+    "num_of_rows": 6078,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "player_id",
+      "award_id",
+      "year",
+      "league_id",
+      "tie",
+      "notes"
+    ],
+    "num_of_headers": 6,
+    "table_constraints": [
+      {
+        "this_table": "player_award",
+        "column": "player_id",
+        "ref_table": "player",
+        "ref_column": "player_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "player_award_vote",
+    "num_of_rows": 6795,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "award_id",
+      "year",
+      "league_id",
+      "player_id",
+      "points_won",
+      "points_max",
+      "votes_first"
+    ],
+    "num_of_headers": 7,
+    "table_constraints": [
+      {
+        "this_table": "player_award_vote",
+        "column": "player_id",
+        "ref_table": "player",
+        "ref_column": "player_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "batting",
+    "num_of_rows": 101332,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "player_id",
+      "year",
+      "stint",
+      "team_id",
+      "league_id",
+      "g",
+      "ab",
+      "r",
+      "h",
+      "double",
+      "triple",
+      "hr",
+      "rbi",
+      "sb",
+      "cs",
+      "bb",
+      "so",
+      "ibb",
+      "hbp",
+      "sh",
+      "sf",
+      "g_idp"
+    ],
+    "num_of_headers": 22,
+    "table_constraints": [
+      {
+        "this_table": "batting",
+        "column": "player_id",
+        "ref_table": "player",
+        "ref_column": "player_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "batting_postseason",
+    "num_of_rows": 11690,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "year",
+      "round",
+      "player_id",
+      "team_id",
+      "league_id",
+      "g",
+      "ab",
+      "r",
+      "h",
+      "double",
+      "triple",
+      "hr",
+      "rbi",
+      "sb",
+      "cs",
+      "bb",
+      "so",
+      "ibb",
+      "hbp",
+      "sh",
+      "sf",
+      "g_idp"
+    ],
+    "num_of_headers": 22,
+    "table_constraints": [
+      {
+        "this_table": "batting_postseason",
+        "column": "team_id",
+        "ref_table": "team",
+        "ref_column": "team_id"
+      },
+      {
+        "this_table": "batting_postseason",
+        "column": "player_id",
+        "ref_table": "player",
+        "ref_column": "player_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "player_college",
+    "num_of_rows": 17350,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "player_id",
+      "college_id",
+      "year"
+    ],
+    "num_of_headers": 3,
+    "table_constraints": [
+      {
+        "this_table": "player_college",
+        "column": "college_id",
+        "ref_table": "college",
+        "ref_column": "college_id"
+      },
+      {
+        "this_table": "player_college",
+        "column": "player_id",
+        "ref_table": "player",
+        "ref_column": "player_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "fielding",
+    "num_of_rows": 170526,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "player_id",
+      "year",
+      "stint",
+      "team_id",
+      "league_id",
+      "pos",
+      "g",
+      "gs",
+      "inn_outs",
+      "po",
+      "a",
+      "e",
+      "dp",
+      "pb",
+      "wp",
+      "sb",
+      "cs",
+      "zr"
+    ],
+    "num_of_headers": 18,
+    "table_constraints": [
+      {
+        "this_table": "fielding",
+        "column": "player_id",
+        "ref_table": "player",
+        "ref_column": "player_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "fielding_outfield",
+    "num_of_rows": 12028,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "player_id",
+      "year",
+      "stint",
+      "glf",
+      "gcf",
+      "grf"
+    ],
+    "num_of_headers": 6,
+    "table_constraints": [
+      {
+        "this_table": "fielding_outfield",
+        "column": "player_id",
+        "ref_table": "player",
+        "ref_column": "player_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "fielding_postseason",
+    "num_of_rows": 12311,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "player_id",
+      "year",
+      "team_id",
+      "league_id",
+      "round",
+      "pos",
+      "g",
+      "gs",
+      "inn_outs",
+      "po",
+      "a",
+      "e",
+      "dp",
+      "tp",
+      "pb",
+      "sb",
+      "cs"
+    ],
+    "num_of_headers": 17,
+    "table_constraints": [
+      {
+        "this_table": "fielding_postseason",
+        "column": "team_id",
+        "ref_table": "player",
+        "ref_column": "team_id"
+      },
+      {
+        "this_table": "fielding_postseason",
+        "column": "player_id",
+        "ref_table": "player",
+        "ref_column": "player_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "hall_of_fame",
+    "num_of_rows": 4120,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "player_id",
+      "yearid",
+      "votedby",
+      "ballots",
+      "needed",
+      "votes",
+      "inducted",
+      "category",
+      "needed_note"
+    ],
+    "num_of_headers": 9,
+    "table_constraints": [
+      {
+        "this_table": "hall_of_fame",
+        "column": "player_id",
+        "ref_table": "player",
+        "ref_column": "player_id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "player",
+    "num_of_rows": 18846,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "player_id",
+      "birth_year",
+      "birth_month",
+      "birth_day",
+      "birth_country",
+      "birth_state",
+      "birth_city",
+      "death_year",
+      "death_month",
+      "death_day",
+      "death_country",
+      "death_state",
+      "death_city",
+      "name_first",
+      "name_last",
+      "name_given",
+      "weight",
+      "height",
+      "bats",
+      "throws",
+      "debut",
+      "final_game",
+      "retro_id",
+      "bbref_id"
+    ],
+    "num_of_headers": 24,
+    "table_constraints": [],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "pitching",
+    "num_of_rows": 44139,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "player_id",
+      "year",
+      "stint",
+      "team_id",
+      "league_id",
+      "w",
+      "l",
+      "g",
+      "gs",
+      "cg",
+      "sho",
+      "sv",
+      "ipouts",
+      "h",
+      "er",
+      "hr",
+      "bb",
+      "so",
+      "baopp",
+      "era",
+      "ibb",
+      "wp",
+      "hbp",
+      "bk",
+      "bfp",
+      "gf",
+      "r",
+      "sh",
+      "sf",
+      "g_idp"
+    ],
+    "num_of_headers": 30,
+    "table_constraints": [],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "pitching_postseason",
+    "num_of_rows": 5109,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "player_id",
+      "year",
+      "round",
+      "team_id",
+      "league_id",
+      "w",
+      "l",
+      "g",
+      "gs",
+      "cg",
+      "sho",
+      "sv",
+      "ipouts",
+      "h",
+      "er",
+      "hr",
+      "bb",
+      "so",
+      "baopp",
+      "era",
+      "ibb",
+      "wp",
+      "hbp",
+      "bk",
+      "bfp",
+      "gf",
+      "r",
+      "sh",
+      "sf",
+      "g_idp"
+    ],
+    "num_of_headers": 30,
+    "table_constraints": [],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "baseball_1",
+    "table_name": "salary",
+    "num_of_rows": 25575,
+    "empty_table": false,
+    "primary_keys": [],
+    "if_compound_pk": false,
+    "table_headers": [
+      "year",
+      "team_id",
+      "league_id",
+      "player_id",
+      "salary"
+    ],
+    "num_of_headers": 5,
+    "table_constraints": [],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false,
+    "zzy": true
+  },
+  {
+    "db_name": "store_1",
+    "table_name": "playlist_tracks",
+    "num_of_rows": 8715,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "playlist_id"
+      ],
+      [
+        "track_id"
+      ]
+    ],
+    "if_compound_pk": true,
+    "table_headers": [
+      "playlist_id",
+      "track_id"
+    ],
+    "num_of_headers": 2,
+    "table_constraints": [
+      {
+        "this_table": "playlist_tracks",
+        "column": "track_id",
+        "ref_table": "tracks",
+        "ref_column": "id"
+      },
+      {
+        "this_table": "playlist_tracks",
+        "column": "playlist_id",
+        "ref_table": "playlists",
+        "ref_column": "id"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "chinook_1",
+    "table_name": "PlaylistTrack",
+    "num_of_rows": 8715,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "PlaylistId"
+      ],
+      [
+        "TrackId"
+      ]
+    ],
+    "if_compound_pk": true,
+    "table_headers": [
+      "PlaylistId",
+      "TrackId"
+    ],
+    "num_of_headers": 2,
+    "table_constraints": [
+      {
+        "this_table": "PlaylistTrack",
+        "column": "TrackId",
+        "ref_table": "Track",
+        "ref_column": "TrackId"
+      },
+      {
+        "this_table": "PlaylistTrack",
+        "column": "PlaylistId",
+        "ref_table": "Playlist",
+        "ref_column": "PlaylistId"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  },
+  {
+    "db_name": "world_1",
+    "table_name": "city",
+    "num_of_rows": 4079,
+    "empty_table": false,
+    "primary_keys": [
+      [
+        "ID"
+      ]
+    ],
+    "if_compound_pk": false,
+    "table_headers": [
+      "ID",
+      "Name",
+      "CountryCode",
+      "District",
+      "Population"
+    ],
+    "num_of_headers": 5,
+    "table_constraints": [
+      {
+        "this_table": "city",
+        "column": "CountryCode",
+        "ref_table": "country",
+        "ref_column": "Code"
+      }
+    ],
+    "hyper_edge_candidate": false,
+    "edge_candidate": false,
+    "has_duplicate_rows": false
+  }
+]
