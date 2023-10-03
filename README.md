@@ -129,7 +129,7 @@ https://arxiv.org/abs/2310.01080
 
 ```
 
-## Citation
+## Contact
 
 If you are interested in our work, please feel free to contact Ziyu Zhao
 Email: ziyu.zhao@research.uwa.edu.au
