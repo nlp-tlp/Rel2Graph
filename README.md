@@ -125,3 +125,16 @@ Note: If you would like to preprocess Spider dataset by yourself, please refer t
 If you find the resource in this repository helpful, please cite
 
 ```
+@phdthesis{pashakhanloo2023integrating,
+  title={Integrating Declarative Static Analysis With Neural Models of Code},
+  author={Pashakhanloo, Pardis},
+  year={2023},
+  school={University of Pennsylvania}
+}
+
+```
+
+## Citation
+
+If you are interested in our work, please feel free to contact Ziyu Zhao
+Email: ziyu.zhao@research.uwa.edu.au
